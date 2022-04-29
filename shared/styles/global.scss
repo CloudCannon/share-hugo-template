@@ -1,0 +1,27 @@
+// Files in shared/styles will be used as global stylesheets on your site,
+// as well as in the component browser and screenshots.
+
+:root {
+    --font-size-large: 54px;
+    --font-weight-large: bold;
+    --font-size-medium: 36px;
+    --font-weight-medium: bold;
+    --font-size-body: 18px;
+    --font-weight-body: normal;
+    --font-size-ui: 16px;
+    --font-weight-ui: bold;
+
+    --color-primary: #393939;
+    --color-primary-fade: #5A5A5A;
+
+    --color-secondary: #E9E9E9;
+    --color-body: #393939;
+    --color-light: #FFFFFF;
+
+    --radius: 12px;
+}
+
+html,
+body {
+    font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+}

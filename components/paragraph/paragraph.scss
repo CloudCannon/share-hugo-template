@@ -1,0 +1,17 @@
+.c-paragraph {
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-body);
+    color: var(--color-body);
+
+    :first-child {
+        margin-top: 0;
+    }
+
+    :last-child {
+        margin-bottom: 0;
+    }
+
+    p {
+        max-width: 80ch;
+    }
+}

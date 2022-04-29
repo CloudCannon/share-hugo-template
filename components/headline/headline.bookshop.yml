@@ -1,0 +1,36 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Headline
+  description:
+  icon:
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  text: Headline
+  heading_level: h1
+  content_width: Medium
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  text: BookShop Starter Library ipsum dolor sit amet scelerisque nisl.
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  heading_level:
+    comment: The heading level, used for SEO. There should only be one h1 per page.
+    type: select
+    options:
+      values:
+        - h1
+        - h2
+        - h3
+  content_width:
+    type: select
+    options:
+      values:
+        - Small
+        - Medium
+        - Large

@@ -1,0 +1,18 @@
+.c-headline {
+    margin: 0;
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-large);
+    color: var(--color-body);
+
+    &.--small {
+        max-width: 580px;
+    }
+
+    &.--medium {
+        max-width: 900px;
+    }
+
+    &.--large {
+        max-width: 1200px;
+    }
+}

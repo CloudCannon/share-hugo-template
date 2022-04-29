@@ -1,0 +1,27 @@
+.c-one-column {
+    display: flex;
+
+    &.--small {
+        max-width: 580px;
+    }
+
+    &.--medium {
+        max-width: 900px;
+    }
+
+    &.--large {
+        max-width: 1200px;
+    }
+
+    &.--left {
+        justify-content: left;
+    }
+
+    &.--center {
+        justify-content: center;
+    }
+
+    &.--right {
+        justify-content: right;
+    }
+}

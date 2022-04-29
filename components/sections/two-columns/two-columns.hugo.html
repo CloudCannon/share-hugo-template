@@ -1,0 +1,12 @@
+<div class="c-two-columns">
+    <div class="--left">
+        {{ range .left_column }}
+            {{ partial "bookshop" . }}
+        {{ end }}
+    </div>
+    <div class="--right">
+        {{ range .right_column }}
+            {{ partial "bookshop" . }}
+        {{ end }}
+    </div>
+</div>

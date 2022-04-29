@@ -1,0 +1,35 @@
+.c-quote {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-body);
+
+    blockquote {
+        margin: 0;
+        font-size: var(--font-size-medium);
+        font-weight: var(--font-weight-medium);
+    }
+
+    &.--small {
+        max-width: 580px;
+    }
+
+    &.--medium {
+        max-width: 900px;
+    }
+
+    &.--large {
+        max-width: 1200px;
+    }
+
+    &.--left {
+        align-items: left;
+    }
+
+    &.--center {
+        align-items: center;
+    }
+
+    &.--right {
+        align-items: right;
+    }
+}
