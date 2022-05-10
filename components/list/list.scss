@@ -1,0 +1,15 @@
+.c-list {
+    line-height: 36px;
+
+    &.--small {
+        max-width: 580px;
+    }
+
+    &.--medium {
+        max-width: 900px;
+    }
+
+    &.--large {
+        max-width: 1200px;
+    }
+}

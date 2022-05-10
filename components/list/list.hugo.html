@@ -1,0 +1,5 @@
+<ul class="c-list --{{ .content_width }}">
+    {{ range .list_items }}
+        <li>{{ partial "bookshop" (slice "paragraph" . )}}</li>
+    {{ end }}
+</ul>
