@@ -2,26 +2,53 @@
 // as well as in the component browser and screenshots.
 
 :root {
-    --font-size-large: 54px;
-    --font-weight-large: bold;
+    --font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif; 
+    --font-size-extra-large: 54px;
+    --font-size-large: 48px;
     --font-size-medium: 36px;
-    --font-weight-medium: bold;
+    --fony-size-small: 24px;
     --font-size-body: 18px;
-    --font-weight-body: normal;
     --font-size-ui: 16px;
-    --font-weight-ui: bold;
 
-    --color-primary: #393939;
-    --color-primary-fade: #5A5A5A;
+    --font-weight-large: 700;
+    --font-weight-body: 400;
+    --font-weight-ui: bold;
+    
+    --line-height-body: 28px;
+    
+    --color-primary: #444444;
+    --color-primary-dark: #000000;
+    --color-primary-light: #666666;
 
     --color-secondary: #E9E9E9;
+    --color-secondary-dark: #CCCCCC;
+    --color-secondary-light: #EEEEEE;
+
     --color-body: #393939;
     --color-light: #FFFFFF;
 
     --radius: 12px;
+    --radius-image: 20px;
 }
 
 html,
 body {
-    font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+    font-family: var(--font-family);
+}
+
+h1 {
+    font-size: var(--font-size-extra-large);
+    font-weight: var(--font-weight-large);
+}
+h2 {
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-large);
+}
+h3 {
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-large);
+}
+h4 {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-large);
 }
