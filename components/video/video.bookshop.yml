@@ -1,0 +1,20 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+  label: Iframe video
+  description: 
+  icon:
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  video: ""
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  video: https://player.vimeo.com/video/622005181?h=cf41e0814a&app_id=122963
+  
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  video:
+    type: url
