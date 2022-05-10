@@ -1,0 +1,11 @@
+.c-gallery-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    .c-image {
+        &.--small, &.--medium, &.--large {
+            width: 580px;
+        }
+    }
+}

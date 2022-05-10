@@ -1,0 +1,5 @@
+<section class="c-gallery-grid">
+    {{ range .images }}
+        {{ partial "bookshop" (slice "image" . )}}
+    {{ end }}
+</section>
