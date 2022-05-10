@@ -1,0 +1,27 @@
+.c-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &.--half {
+        width: 580px;
+    }
+
+    .c-input label {
+        text-align: left;
+    }
+    
+    &.--center {
+        .c-input {
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    &.--right {
+        .c-input {
+            align-items: flex-end;
+            text-align: right;
+        }
+    }
+}

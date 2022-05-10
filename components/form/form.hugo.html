@@ -1,0 +1,5 @@
+<form class="c-form --{{ .content_width }} --{{ .content_alignment }}" {{if .button.url }} action="{{.button.url}}" {{ end }}>
+    {{ range .inputs }}
+        {{ partial "bookshop" (slice "input" . )}}
+    {{ end }}
+</form>
