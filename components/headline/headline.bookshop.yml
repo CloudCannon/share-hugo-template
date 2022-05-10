@@ -12,6 +12,7 @@ blueprint:
   text: Headline
   heading_level: h1
   content_width: Medium
+  content_alignment: Left
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -27,6 +28,7 @@ _inputs:
         - h1
         - h2
         - h3
+        - h4
   content_width:
     type: select
     options:
@@ -34,3 +36,10 @@ _inputs:
         - Small
         - Medium
         - Large
+  content_alignment:
+    type: select
+    options:
+      values:
+        - Left
+        - Center
+        - Right

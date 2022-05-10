@@ -11,6 +11,9 @@ spec:
 blueprint:
   text: >-
     Paragraph text
+  font_weight: Regular
+  content_width: Medium
+  content_alignment: left
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -25,3 +28,23 @@ preview:
 _inputs:
   text:
     type: markdown
+  font_weight:
+    type: select
+    options:
+      values:
+        - Regular
+        - Bold
+  content_width:
+    type: select
+    options:
+      values:
+        - Small
+        - Medium
+        - Large
+  content_alignment:
+    type: select
+    options:
+      values:
+        - Left
+        - Center
+        - Right

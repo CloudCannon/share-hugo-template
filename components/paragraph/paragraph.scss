@@ -1,6 +1,7 @@
 .c-paragraph {
     font-size: var(--font-size-body);
     font-weight: var(--font-weight-body);
+    line-height: var(--line-height-body);
     color: var(--color-body);
 
     :first-child {
@@ -12,6 +13,34 @@
     }
 
     p {
-        max-width: 80ch;
+        max-width: 900px;
+    }
+
+    &.--small p {
+        max-width: 580px;
+    }
+
+    &.--medium p {
+        max-width: 900px;
+    }
+
+    &.--large p {
+        max-width: 1200px;
+    }
+
+    &.--bold {
+        font-weight: 700;
+    }
+
+    &.--left {
+        text-align: left;
+    }
+
+    &.--center {
+        text-align: center;
+    }
+
+    &.--right {
+        text-align: right;
     }
 }
