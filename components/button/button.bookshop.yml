@@ -10,7 +10,9 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   text: Button
+  disabled: false
   url: /
+  open_in_new_tab: false
   style: Primary
   size: Responsive
 
@@ -31,3 +33,7 @@ _inputs:
       values:
         - Responsive
         - Full
+  disabled:
+    type: checkbox
+  open_in_new_tab:
+    type: checkbox

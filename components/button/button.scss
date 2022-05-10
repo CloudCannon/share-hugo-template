@@ -20,8 +20,25 @@
         background-color: #000000;
     }
 
+    &:active {
+        background-color: #666666;
+    }
+
+    
     &.--secondary {
-        color: var(--color-primary-fade);
+        color: var(--color-primary);
         background-color: var(--color-secondary);
+        &:hover {
+            background-color: var(--color-secondary-dark);
+        }
+        
+        &:active {
+            background-color: var(--color-secondary-light);
+        }
+    }
+    &.--disabled {
+        background-color: var(--color-secondary-light);
+        color: #777777;
+        pointer-events: none;
     }
 }
