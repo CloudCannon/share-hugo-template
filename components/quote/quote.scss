@@ -6,7 +6,7 @@
     blockquote {
         margin: 0;
         font-size: var(--font-size-medium);
-        font-weight: var(--font-weight-medium);
+        font-weight: var(--font-weight-large);
     }
 
     &.--small {
@@ -22,14 +22,14 @@
     }
 
     &.--left {
-        align-items: left;
+        text-align: left;
     }
 
     &.--center {
-        align-items: center;
+        text-align: center;
     }
 
     &.--right {
-        align-items: right;
+        text-align: right;
     }
 }
