@@ -1,0 +1,8 @@
+<div class="c-cta --{{ lower .content_width }} --{{ lower .content_alignment }}">
+    {{ partial "bookshop" (slice "headline" .heading )}}
+    {{ partial "bookshop" (slice "paragraph" .paragraph )}}
+    <form {{if .button.url }} action="{{.button.url}}" {{ end }}>
+        {{ partial "bookshop" (slice "input" .input )}}
+        {{ partial "bookshop" (slice "input" .button )}}
+    </form>
+</div>

@@ -1,0 +1,46 @@
+.c-cta {
+    display: flex;
+    flex-direction: column;
+
+    .c-paragraph {
+        padding-top: 10px;
+        padding-bottom: 40px;
+    }
+    form {
+        display: flex;
+    }
+    form .text {
+        border-radius: var(--radius) 0px 0px var(--radius);
+        width: 420px;
+    }
+    form .c-button {
+        border-radius: 0px var(--radius) var(--radius) 0px;
+        height: 64px;
+    }
+
+    &.--small {
+        max-width: 580px;
+    }
+
+    &.--medium {
+        max-width: 900px;
+    }
+
+    &.--large {
+        max-width: 1200px;
+    }
+
+    &.--center {
+        .c-headline, form, .c-paragraph {
+            justify-content: center;
+            text-align: center;
+        }
+    }
+    
+    &.--right {
+        .c-headline, form, .c-paragraph {
+            justify-content: flex-end;
+            text-align: right;
+        }
+    }
+}
