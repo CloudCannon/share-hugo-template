@@ -1,0 +1,13 @@
+{{ $options := newScratch }} {{ if or (.mute) (.no_player_controls) }} {{ $options.Set "mute" 1 }} {{else}} {{ $options.Set "mute" 0 }} {{ end }}
+{{ if .no_player_controls }} {{ $options.Set "controls" 0 }} {{else}} {{ $options.Set "controls" 1 }} {{ end }}
+{{ if or (.loop) (.no_player_controls) }} {{ $options.Set "loop" 1 }} {{else}} {{ $options.Set "loop" 0 }} {{ end }}
+{{ if .autoplay }} {{ $options.Set "autopause" 0 }} {{else}} {{ $options.Set "autopause" 1 }} {{ end }}
+{{ if or (.autoplay) (.no_player_controls) }} {{ $options.Set "autoplay" 1 }} {{else}} {{ $options.Set "autoplay" 0 }} {{ end }}
+
+{{ $youtube_url := printf "https://www.youtube.com/embed/%s?playlist=%s&mute=%d&controls=%d&loop=%d&autopause=%d&autoplay=%d" .video_id .video_id ($options.Get "mute") ($options.Get "controls") ($options.Get "loop") ($options.Get "autopause") ($options.Get "autoplay") }}
+
+<div class="c-youtube --{{ .content_alignment }} --{{ .content_width }}">
+    {{ if .video_id }}
+        {{ partial "bookshop" (slice "video" (dict "video" $youtube_url ))}}
+    {{ end }}
+</div>
