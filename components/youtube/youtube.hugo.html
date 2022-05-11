@@ -8,6 +8,6 @@
 
 <div class="c-youtube --{{ .content_alignment }} --{{ .content_width }}">
     {{ if .video_id }}
-        {{ partial "bookshop" (slice "video" (dict "video" $youtube_url ))}}
+        {{ partial "bookshop" (slice "embed" (dict "url" $youtube_url ))}}
     {{ end }}
 </div>
