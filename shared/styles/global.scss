@@ -6,7 +6,7 @@
     --font-size-extra-large: 54px;
     --font-size-large: 48px;
     --font-size-medium: 36px;
-    --fony-size-small: 24px;
+    --font-size-small: 24px;
     --font-size-body: 18px;
     --font-size-ui: 16px;
 
@@ -34,6 +34,8 @@
 html,
 body {
     font-family: var(--font-family);
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
 }
 
 h1 {

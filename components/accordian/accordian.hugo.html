@@ -1,0 +1,8 @@
+<div class="c-accordian --{{ .content_alignment }} --{{ .content_width }}">
+    {{ range .accordians }}
+        <details class="c-accordian__dropdown">
+            <summary class="c-accordian__dropdown__summary">{{ .heading }}</summary>
+            <p class="c-accordian__dropdown__content">{{ .content }}</p>
+        </details>
+    {{ end }}
+</div>
