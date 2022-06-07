@@ -1,11 +1,18 @@
 .c-gallery-grid {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 40px;
+    max-width: 1200px;
+    @media screen and (max-width: 580px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
     .c-image {
         &.--small, &.--medium, &.--large {
-            width: 580px;
+            max-width: 580px;
+            img {
+                width: 100%;
+            }
         }
     }
 }
