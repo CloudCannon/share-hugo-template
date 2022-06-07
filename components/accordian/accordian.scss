@@ -1,10 +1,10 @@
 .c-accordian {
     border-top: 2px solid #333333;
     &.--half {
-        width: 580px;
+        max-width: 580px;
     }
     &.--full {
-        width: 1200px;
+        max-width: 1200px;
     }
     
     &__dropdown {

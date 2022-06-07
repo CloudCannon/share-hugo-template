@@ -1,12 +1,12 @@
 .c-image {
     &.--small {
-        width: 580px;
+        max-width: 580px;
     }
     &.--medium {
-        width: 900px;
+        max-width: 900px;
     }
     &.--large {
-        width: 1200px;
+        max-width: 1200px;
     }
     &.--left {
         text-align: left;
