@@ -2,8 +2,8 @@
 spec:
   structures:
     - content_blocks
-  label: CTA
-  description:
+  label: Input CTA
+  description: Form CTA with configurable input field
   icon:
   tags: []
 

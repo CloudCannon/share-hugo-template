@@ -1,4 +1,4 @@
-<div class="c-cta --{{ lower .content_width }} --{{ lower .content_alignment }}">
+<div class="c-input-cta --{{ lower .content_width }} --{{ lower .content_alignment }}">
     {{ partial "bookshop" (slice "headline" .heading )}}
     {{ partial "bookshop" (slice "paragraph" .paragraph )}}
     <form {{if .button.url }} action="{{.button.url}}" {{ end }}>
