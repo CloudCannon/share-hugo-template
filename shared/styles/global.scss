@@ -14,6 +14,9 @@
     --font-weight-body: 400;
     --font-weight-ui: bold;
     
+    --line-height-extra-large: 62px;
+    --line-height-large: 55px;
+    --line-height-medium: 41px;
     --line-height-body: 28px;
     
     --color-primary: #444444;
@@ -41,16 +44,20 @@ body {
 h1 {
     font-size: var(--font-size-extra-large);
     font-weight: var(--font-weight-large);
+    line-height: var(--line-height-extra-large);
 }
 h2 {
     font-size: var(--font-size-large);
     font-weight: var(--font-weight-large);
+    line-height: var(--line-height-large);
 }
 h3 {
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-large);
+    line-height: var(--line-height-medium);
 }
 h4 {
     font-size: var(--font-size-small);
     font-weight: var(--font-weight-large);
+    line-height: var(--line-height-body);
 }
