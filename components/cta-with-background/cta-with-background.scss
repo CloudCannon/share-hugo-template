@@ -1,6 +1,7 @@
 .c-cta-with-background {
     display: grid;
     min-height: 500px;
+    border-radius: var(--radius);
     
     &.--small {
         max-width: 580px;
@@ -23,6 +24,17 @@
     }
     &.--bottom .c-cta{
         align-self: flex-end;
+    }
+
+    &.--primary {
+        .c-cta p, .c-cta h1, .c-cta h2, .c-cta h3, .c-cta h4, .c-cta li { 
+            color: var(--color-primary); 
+        }
+    }
+    &.--secondary {
+        .c-cta p, .c-cta h1, .c-cta h2, .c-cta h3, .c-cta h4, .c-cta li {
+            color: var(--color-secondary); 
+        }
     }
 
     .__image {
