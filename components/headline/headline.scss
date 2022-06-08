@@ -1,28 +1,4 @@
 .c-headline {
     margin: 0;
     color: var(--color-body);
-
-    &.--small {
-        max-width: 580px;
-    }
-
-    &.--medium {
-        max-width: 900px;
-    }
-
-    &.--large {
-        max-width: 1200px;
-    }
-
-    &.--left {
-        text-align: left;
-    }
-
-    &.--center {
-        text-align: center;
-    }
-
-    &.--right {
-        text-align: right;
-    }
 }

@@ -2,6 +2,7 @@
 spec:
   structures:
     - content_blocks
+    - simple_blocks
   label: Paragraph
   description:
   icon:
@@ -12,8 +13,6 @@ blueprint:
   text: >-
     Paragraph text
   font_weight: Regular
-  content_width: Medium
-  content_alignment: left
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -34,17 +33,3 @@ _inputs:
       values:
         - Regular
         - Bold
-  content_width:
-    type: select
-    options:
-      values:
-        - Small
-        - Medium
-        - Large
-  content_alignment:
-    type: select
-    options:
-      values:
-        - Left
-        - Center
-        - Right

@@ -11,7 +11,10 @@
 
     color: var(--color-light);
     background-color: var(--color-primary);
-
+    
+    &.--responsive {
+        width: fit-content;
+    }
     &.--full {
         display: flex;
     }

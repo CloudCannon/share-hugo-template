@@ -2,6 +2,7 @@
 spec:
   structures:
     - content_blocks
+    - simple_blocks
   label: Headline
   description:
   icon:
@@ -11,8 +12,6 @@ spec:
 blueprint:
   text: Headline
   heading_level: h1
-  content_width: Medium
-  content_alignment: Left
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -29,17 +28,3 @@ _inputs:
         - h2
         - h3
         - h4
-  content_width:
-    type: select
-    options:
-      values:
-        - Small
-        - Medium
-        - Large
-  content_alignment:
-    type: select
-    options:
-      values:
-        - Left
-        - Center
-        - Right

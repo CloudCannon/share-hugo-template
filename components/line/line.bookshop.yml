@@ -2,6 +2,7 @@
 spec:
   structures:
     - content_blocks
+    - simple_blocks
   label: Line
   description: Line
   icon:

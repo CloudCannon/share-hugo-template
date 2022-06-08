@@ -2,6 +2,7 @@
 spec:
   structures:
     - content_blocks
+    - simple_blocks
   label: List
   description:
   icon:
@@ -9,7 +10,6 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  content_width: Medium
   list_items: [bookshop:paragraph]
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
@@ -21,10 +21,3 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  content_width:
-    type: select
-    options:
-      values:
-        - Small
-        - Medium
-        - Large
