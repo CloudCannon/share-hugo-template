@@ -1,5 +1,5 @@
 <div class="c-input-cta --{{ lower .content_width }} --{{ lower .content_alignment }}">
-    {{ partial "bookshop" (slice "headline" .heading )}}
+    {{ if .heading }}{{ partial "bookshop" (slice "headline" .heading )}}{{ end }}
     {{ if .paragraph }}{{ partial "bookshop" (slice "paragraph" .paragraph )}}{{ end }}
     <form {{if .button.url }} action="{{.button.url}}" {{ end }}>
         {{ partial "bookshop" (slice "input" .input )}}
