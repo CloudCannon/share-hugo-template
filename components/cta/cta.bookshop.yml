@@ -1,0 +1,45 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: CTA
+  description: 
+  icon:
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  content_width: large
+  content_alignment: left
+  blocks: [bookshop:structure:simple_blocks]
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  blocks: 
+    - _bookshop_name: headline
+      text: BookShop Starter Library ipsum dolo sitor orciarius nato quntess, nas cheturo ridicu lusos mus.
+      heading_level: h2
+    - _bookshop_name: button
+      text: Learn more
+      disabled: false
+      url: /
+      open_in_new_tab: false
+      style: Primary
+      size: Responsive
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  content_width:
+    type: select
+    options:
+      values:
+        - Small
+        - Medium
+        - Large
+  content_alignment:
+    type: select
+    options:
+      values:
+        - Left
+        - Center
+        - Right

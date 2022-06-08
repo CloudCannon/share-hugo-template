@@ -1,0 +1,53 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: CTA with background
+  description: CTA with background image or color 
+  icon:
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  content_width: large
+  include_background_color: false
+  background_color: "#F0F0F0"
+  include_background_image: false
+  background_image_path: 
+  cta: bookshop:cta
+  cta_vertical_alignment: top
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  include_background_image: true
+  background_image_path: http://placekitten.com/1500/800
+  cta: bookshop:cta
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  content_width:
+    type: select
+    options:
+      values:
+        - Small
+        - Medium
+        - Large
+  vertical_alignment:
+    type: select
+    options:
+      values:
+        - Top
+        - Middle
+        - Bottom
+  include_background_color:
+    type: checkbox
+    hidden: "!include_background_image"
+  background_color:
+    type: color
+    hidden: "include_background_color"
+  include_background_image:
+    type: checkbox
+    hidden: "!include_background_color"
+  background_image_path:
+    type: image
+    hidden: "include_background_image"

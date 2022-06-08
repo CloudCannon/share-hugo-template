@@ -1,0 +1,39 @@
+.c-cta-with-background {
+    display: grid;
+    min-height: 500px;
+    
+    &.--small {
+        max-width: 580px;
+        .c-cta {
+            padding: 50px;
+        }
+    }
+    &.--medium {
+        max-width: 900px;
+    }
+    &.--large {
+        max-width: 1200px;
+    }
+
+    &.--top .c-cta{
+        align-self: flex-start;
+    }
+    &.--middle .c-cta{
+        align-self: center;
+    }
+    &.--bottom .c-cta{
+        align-self: flex-end;
+    }
+
+    .__image {
+        border-radius: var(--radius);
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .c-cta {
+        grid-row: 1;
+        grid-column: 1;
+        height: max-content;
+        padding: 100px;
+    }
+}
