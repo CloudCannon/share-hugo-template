@@ -14,6 +14,7 @@ blueprint:
   background_color: "#F0F0F0"
   include_background_image: false
   background_image_path: 
+  curved_edges: true
   cta: bookshop:cta
   text_color: primary
   cta_vertical_alignment: top
@@ -52,6 +53,8 @@ _inputs:
   background_image_path:
     type: image
     hidden: "include_background_image"
+  curved_edges:
+    type: switch
   text_color:
     type: select
     options:

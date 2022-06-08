@@ -1,7 +1,14 @@
 .c-cta-with-background {
     display: grid;
     min-height: 500px;
-    border-radius: var(--radius);
+    height: 100%;
+
+    &.--curved-edges {
+        border-radius: var(--radius);
+        .__image {
+            border-radius: var(--radius);
+        }
+    }
     
     &.--small {
         max-width: 580px;
@@ -38,7 +45,6 @@
     }
 
     .__image {
-        border-radius: var(--radius);
         grid-row: 1;
         grid-column: 1;
     }

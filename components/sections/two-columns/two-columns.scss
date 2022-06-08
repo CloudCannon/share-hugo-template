@@ -1,5 +1,7 @@
 .c-two-columns {
     display: flex;
+    border-radius: var(--radius);
+    overflow: hidden;
 
     >.--left {
         flex: 1;
