@@ -1,4 +1,4 @@
-<form class="c-form --{{ .content_width }} --{{ .content_alignment }}" {{if .button.url }} action="{{.button.url}}" {{ end }}>
+<form class="c-form --{{ .content_width | lower }} --{{ .content_alignment | lower }}" {{if .button.url }} action="{{.button.url}}" {{ end }}>
     {{ range .inputs }}
         {{ partial "bookshop" (slice "input" . )}}
     {{ end }}

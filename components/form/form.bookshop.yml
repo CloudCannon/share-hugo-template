@@ -11,7 +11,7 @@ spec:
 blueprint:
   inputs: [bookshop:input]
   content_width: Full
-  content_alignment: left
+  content_alignment: Left
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:

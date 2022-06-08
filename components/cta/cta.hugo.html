@@ -1,4 +1,4 @@
-<div class="c-cta --{{ .content_alignment }} --{{ .content_width }}">
+<div class="c-cta --{{ .content_alignment | lower }} --{{ .content_width | lower }}">
     {{ range .blocks }}
         {{ partial "bookshop" . }}
     {{ end }}

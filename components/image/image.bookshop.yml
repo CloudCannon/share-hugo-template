@@ -9,8 +9,8 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  content_width: large
-  content_alignment: center
+  content_width: Large
+  content_alignment: Center
   image:
     path: ""
     alt: ""

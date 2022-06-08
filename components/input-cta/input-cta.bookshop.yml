@@ -16,20 +16,19 @@ blueprint:
   button:
     default_value: Button
     name: button
-    input_type: submit
+    _input_type: submit
     url: ""
     style: Primary
   content_width: Medium
-  content_alignment: left
+  content_alignment: Left
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  button:
-    input_type: 
-      hidden: true
+  input_type: 
+    hidden: true
   content_width:
     type: select
     options:

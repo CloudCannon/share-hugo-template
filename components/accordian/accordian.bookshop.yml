@@ -9,8 +9,8 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  content_width: full
-  content_alignment: center
+  content_width: Full
+  content_alignment: Center
   accordians:
     - heading:
       content:

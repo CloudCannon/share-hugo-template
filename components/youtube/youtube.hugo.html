@@ -6,7 +6,7 @@
 
 {{ $youtube_url := printf "https://www.youtube.com/embed/%s?playlist=%s&mute=%d&controls=%d&loop=%d&autopause=%d&autoplay=%d" .video_id .video_id ($options.Get "mute") ($options.Get "controls") ($options.Get "loop") ($options.Get "autopause") ($options.Get "autoplay") }}
 
-<div class="c-youtube --{{ .content_alignment }} --{{ .content_width }}">
+<div class="c-youtube --{{ .content_width | lower }}">
     {{ if .video_id }}
         {{ partial "bookshop" (slice "embed" (dict "url" $youtube_url ))}}
     {{ end }}

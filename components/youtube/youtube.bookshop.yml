@@ -9,7 +9,7 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  content_width: large
+  content_width: Large
   video_id: ""
   autoplay: false
   loop: false

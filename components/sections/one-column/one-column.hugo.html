@@ -1,4 +1,4 @@
-<div class="c-one-column --{{ .content_width }} --{{ .content_alignment }}">
+<div class="c-one-column --{{ .content_width | lower }} --{{ .content_alignment | lower }}">
 {{ range .blocks }}
     {{ partial "bookshop" . }}
 {{ end }}

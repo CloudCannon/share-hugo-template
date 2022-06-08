@@ -1,4 +1,4 @@
-<div class="c-image --{{ .content_alignment }} --{{ .content_width }}">
+<div class="c-image --{{ .content_alignment | lower }} --{{ .content_width | lower }}">
     <img
         loading="lazy"
         src="{{ .image.path }}"

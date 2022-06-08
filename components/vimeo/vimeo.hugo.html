@@ -6,7 +6,7 @@
 
 {{ $vimeo_url := printf "https://player.vimeo.com/video/%s?muted=%d&background=%d&loop=%d&autopause=%d&autoplay=%d" .video_id ($options.Get "mute") ($options.Get "background") ($options.Get "loop") ($options.Get "autopause") ($options.Get "autoplay") }}
 
-<div class="c-vimeo --{{ .content_alignment }} --{{ .content_width }}">
+<div class="c-vimeo --{{ .content_width | lower }}">
     {{ if .video_id }}
         {{ partial "bookshop" (slice "embed" (dict "url" $vimeo_url ))}}
     {{ end }}

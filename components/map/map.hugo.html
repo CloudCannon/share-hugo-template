@@ -1,6 +1,6 @@
 {{ $address := (replace .location " " "+")}}
 {{ $map_url := printf "https://www.google.com/maps/embed/v1/place?key=%s&q=%s" .api_key $address }}
 
-<div class="c-map --{{ .content_alignment }} --{{ .content_width }}">
+<div class="c-map --{{ .content_alignment | lower }} --{{ .content_width | lower }}">
     {{ partial "bookshop" (slice "embed" (dict "url" $map_url ))}}
 </div>

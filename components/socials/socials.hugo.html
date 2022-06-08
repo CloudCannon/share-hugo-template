@@ -1,5 +1,5 @@
-<div class="c-socials --{{ .content_width }}">
-    <ul class="c-socials__list --{{ .content_alignment }}">
+<div class="c-socials --{{ .content_width | lower }}">
+    <ul class="c-socials__list --{{ .content_alignment | lower }}">
         {{ range .logo_links }}
             <li>
             <a

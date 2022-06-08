@@ -1,4 +1,4 @@
-<div class="c-cta-with-background --{{ .cta_vertical_alignment }} --{{ .content_width }} --{{ .text_color }} {{ if.curved_edges }}--curved-edges{{ end }}" {{ if .include_background_color }} style="background-color: {{ .background_color }};" {{ end }}>
+<div class="c-cta-with-background --{{ .cta_vertical_alignment | lower }} --{{ .content_width | lower }} --{{ .text_color | lower }} {{ if.curved_edges }}--curved-edges{{ end }}" {{ if .include_background_color }} style="background-color: {{ .background_color }};" {{ end }}>
     {{ if .include_background_image }} <div class="__image" style="background-image: url({{ .background_image_path }});"></div> {{ end }}
     {{ partial "bookshop" (slice "cta" .cta )}}
 </div>
