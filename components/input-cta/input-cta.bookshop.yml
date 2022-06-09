@@ -16,7 +16,7 @@ blueprint:
   button:
     default_value: Button
     name: button
-    _input_type: submit
+    input_type: submit
     url: ""
     style: Primary
   content_width: Medium
