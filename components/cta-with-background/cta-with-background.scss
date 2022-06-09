@@ -5,7 +5,7 @@
 
     &.--curved-edges {
         border-radius: var(--radius);
-        .__image {
+        .__image, .__gradient-overlay {
             border-radius: var(--radius);
         }
     }
@@ -43,7 +43,10 @@
             color: var(--color-secondary); 
         }
     }
-
+    .__gradient-overlay {
+        grid-row: 1;
+        grid-column: 1;
+    }
     .__image {
         grid-row: 1;
         grid-column: 1;

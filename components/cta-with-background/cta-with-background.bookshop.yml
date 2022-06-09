@@ -14,10 +14,14 @@ blueprint:
   background_color: "#F0F0F0"
   include_background_image: false
   background_image_path: 
+  background_overlay:
+    include: true
+    gradient_type: Linear
+    color: "#00000073"
   curved_edges: true
   cta: bookshop:cta
   text_color: Primary
-  cta_vertical_alignment: Top
+  vertical_alignment: Top
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -41,6 +45,21 @@ _inputs:
         - Top
         - Middle
         - Bottom
+  background_overlay:
+    include:
+      type: checkbox
+    gradient_type:
+      type: select
+      options:
+        values:
+          - Linear
+          - Radial
+          - Solid
+    color:
+      type: color
+      options:
+        format: hex
+        alpha: true
   include_background_color:
     type: checkbox
     hidden: "!include_background_image"
