@@ -1,4 +1,4 @@
-<div class="c-two-columns">
+<div class="c-two-columns --{{ .content_width | lower }} --{{ .content_alignment | lower }}">
     <div class="--left">
         {{ range .left_column }}
             {{ partial "bookshop" . }}

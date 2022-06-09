@@ -1,5 +1,6 @@
 .c-one-column {
     display: flex;
+    width: 100%;
 
     &.--small {
         max-width: 580px;

@@ -2,6 +2,7 @@
     display: flex;
     border-radius: var(--radius);
     overflow: hidden;
+    width: 100%;
 
     >.--left {
         flex: 1;
@@ -9,5 +10,29 @@
 
     >.--right {
         flex: 1;
+    }
+
+    &.--small {
+        max-width: 580px;
+    }
+
+    &.--medium {
+        max-width: 900px;
+    }
+
+    &.--large {
+        max-width: 1200px;
+    }
+
+    &.--left {
+        justify-content: left;
+    }
+
+    &.--center {
+        justify-content: center;
+    }
+
+    &.--right {
+        justify-content: right;
     }
 }
