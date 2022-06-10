@@ -12,8 +12,6 @@ spec:
 blueprint:
   text: >-
     Paragraph text
-  font_weight: Regular
-
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   text: >-
@@ -27,9 +25,3 @@ preview:
 _inputs:
   text:
     type: markdown
-  font_weight:
-    type: select
-    options:
-      values:
-        - Regular
-        - Bold
