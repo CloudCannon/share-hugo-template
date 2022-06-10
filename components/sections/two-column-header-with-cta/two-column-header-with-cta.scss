@@ -1,10 +1,12 @@
 .c-two-column-header-with-cta {
     max-width: 1200px;
     display: flex;
+    margin: 0 auto;
 
     &.--bg-white {
         .__content {
             gap: 40px;
+            grid-template-columns: 1fr 1fr;
             .__image {
                 border-radius: var(--radius);
             }
