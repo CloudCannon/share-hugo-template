@@ -13,17 +13,17 @@ blueprint:
   content_alignment: Center
   accordians:
     - heading:
-      content:
+      content: bookshop:paragraph
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   accordians:
     - heading: BookShop Starter Library 
-      content: Duis accumsan mauris dui, a eleifend massa maximus eu. Aliquam a rhoncus dolor. In enim lectus, cursus sed auctor gravida, gravida nec justo. Quisque lacinia, lectus eget efficitur commodo, magna nulla efficitur elit, eget lacinia ligula quam at ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris sed tempus odio, vel malesuada enim. Donec aliquet at lectus eget accumsan
+      content: bookshop:paragraph
     - heading: BookShop Starter Library 
-      content: Duis accumsan mauris dui, a eleifend massa maximus eu. Aliquam a rhoncus dolor. In enim lectus, cursus sed auctor gravida, gravida nec justo. Quisque lacinia, lectus eget efficitur commodo, magna nulla efficitur elit, eget lacinia ligula quam at ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris sed tempus odio, vel malesuada enim. Donec aliquet at lectus eget accumsan
+      content: bookshop:paragraph
     - heading: BookShop Starter Library 
-      content: Duis accumsan mauris dui, a eleifend massa maximus eu. Aliquam a rhoncus dolor. In enim lectus, cursus sed auctor gravida, gravida nec justo. Quisque lacinia, lectus eget efficitur commodo, magna nulla efficitur elit, eget lacinia ligula quam at ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris sed tempus odio, vel malesuada enim. Donec aliquet at lectus eget accumsan
+      content: bookshop:paragraph
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:

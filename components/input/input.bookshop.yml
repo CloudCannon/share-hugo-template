@@ -14,7 +14,6 @@ blueprint:
   name: ""
   input_type: text
   is_required: true
-  style: Primary
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:

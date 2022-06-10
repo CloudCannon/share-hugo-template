@@ -2,7 +2,7 @@
     {{ range .accordians }}
         <details class="c-accordian__dropdown">
             <summary class="c-accordian__dropdown__summary">{{ .heading }}</summary>
-            <p class="c-accordian__dropdown__content">{{ .content }}</p>
+            {{ partial "bookshop" (slice "paragraph" .content )}}
         </details>
     {{ end }}
 </div>
