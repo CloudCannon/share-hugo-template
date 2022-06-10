@@ -11,6 +11,7 @@ spec:
 blueprint:
   content_width: Large
   content_alignment: Left
+  vertical_alignment: Top
   blocks: [bookshop:structure:simple_blocks]
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
@@ -43,3 +44,10 @@ _inputs:
         - Left
         - Center
         - Right
+  vertical_alignment:
+    type: select
+    options:
+      values:
+        - Top
+        - Middle
+        - Bottom

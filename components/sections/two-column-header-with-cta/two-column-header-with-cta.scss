@@ -1,0 +1,39 @@
+.c-two-column-header-with-cta {
+    width: 1200px;
+    display: flex;
+
+    &.--bg-white {
+        .__content {
+            .__image {
+                border-radius: var(--radius);
+            }
+        }
+    }
+
+    .__content {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        min-height: 580px;
+        width: 100%;
+        border-radius: var(--radius);
+        overflow: hidden;
+
+        &.--primary {
+            .c-cta p, .c-cta h1, .c-cta h2, .c-cta h3, .c-cta h4, .c-cta li { 
+                color: var(--color-primary); 
+            }
+        }
+        &.--secondary {
+            .c-cta p, .c-cta h1, .c-cta h2, .c-cta h3, .c-cta h4, .c-cta li {
+                color: var(--color-secondary); 
+            }
+        }
+        .__image {
+            height: 100%;
+        }
+        .c-cta {
+            height: max-content;
+            padding: 100px 60px;
+        }
+    }
+}

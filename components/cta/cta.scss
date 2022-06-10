@@ -26,6 +26,16 @@
         justify-items: center;
         justify-self: center;
     }
+
+    &.--top {
+        align-self: flex-start;
+    }
+    &.--middle {
+        align-self: center;
+    }
+    &.--bottom {
+        align-self: flex-end;
+    }
     
     .c-button {
         margin-top: 30px;
