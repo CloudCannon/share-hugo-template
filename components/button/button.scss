@@ -16,7 +16,8 @@
         width: fit-content;
     }
     &.--full {
-        display: flex;
+        width: -moz-available;
+        width: -webkit-fill-available;
     }
 
     &:hover {
