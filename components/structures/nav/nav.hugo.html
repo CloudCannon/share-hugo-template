@@ -1,0 +1,8 @@
+<nav class="c-nav">
+    <img class="__logo" src="{{ .logo }}">
+    <ul class="__links">
+        {{ range .links }}
+            <li><a href="{{ .url }}">{{ .name }}</a></li>
+        {{ end }}
+    </ul>
+</nav>
