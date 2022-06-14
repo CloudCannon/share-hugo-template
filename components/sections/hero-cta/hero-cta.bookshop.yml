@@ -19,7 +19,7 @@ blueprint:
   background_overlay:
     include: true
     gradient_type: Linear
-    color: 0, 0, 0, 0.25
+    color: rgba(0, 0, 0, 0.25)
   cta: bookshop:cta!
 
 # Overrides any fields in the blueprint when viewing this component in the component browser

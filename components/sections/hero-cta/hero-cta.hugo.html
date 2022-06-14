@@ -3,9 +3,9 @@
         {{ if .include_background_image }} <div class="__image" style="background-image: url({{ .background_image_path }});"></div> {{ end }}
         <div class="__gradient-overlay"
             {{ if .background_overlay.include }}
-                {{ if eq .background_overlay.gradient_type "Linear" }} class="gradient" style="background-image: linear-gradient(to right, rgba({{ .background_overlay.color }}), rgba(0,0,0,0));" {{ end }}
-                {{ if eq .background_overlay.gradient_type "Radial" }} class="gradient" style="background-image: radial-gradient(circle at  left top, gba({{ .background_overlay.color }}), rgba(0,0,0,0));" {{ end }}
-                {{ if eq .background_overlay.gradient_type "solid" }} class="gradient" style="background-color: gba({{ .background_overlay.color }});" {{ end }}
+                {{ if eq .background_overlay.gradient_type "Linear" }} class="gradient" style="background-image: linear-gradient(to right, {{ .background_overlay.color | safeCSS }}, rgba(0,0,0,0));" {{ end }}
+                {{ if eq .background_overlay.gradient_type "Radial" }} class="gradient" style="background-image: radial-gradient(circle at  left top, {{ .background_overlay.color | safeCSS }}, rgba(0,0,0,0));" {{ end }}
+                {{ if eq .background_overlay.gradient_type "solid" }} class="gradient" style="background-color: {{ .background_overlay.color | safeCSS }};" {{ end }}
             {{ end }}
         ></div>
         {{ partial "bookshop" (slice "cta" .cta )}}
