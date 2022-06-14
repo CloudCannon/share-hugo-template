@@ -44,4 +44,4 @@ _inputs:
     type: checkbox
   color:
     type: color
-    hidden: "white"
+    hidden: "!white"
