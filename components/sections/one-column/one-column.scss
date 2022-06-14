@@ -17,14 +17,20 @@
     }
 
     &.--left {
-        justify-content: left;
+        justify-content: flex-start;
+        text-align: left;
+        align-items: flex-start;
     }
 
     &.--center {
         justify-content: center;
+        text-align: center;
+        align-items: center;
     }
 
     &.--right {
-        justify-content: right;
+        justify-content: flex-end;
+        text-align: right;
+        align-items: flex-end;
     }
 }
