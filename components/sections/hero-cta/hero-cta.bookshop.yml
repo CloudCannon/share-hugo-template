@@ -56,7 +56,7 @@ _inputs:
   color:
     type: color
     options:
-      format: hex
+      format: rgb
       alpha: true
   include_background_color:
     type: checkbox
