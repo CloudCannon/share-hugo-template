@@ -20,7 +20,7 @@ blueprint:
     include: true
     gradient_type: Linear
     color: "#00000073"
-  cta: bookshop:cta
+  cta: bookshop:cta!
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
