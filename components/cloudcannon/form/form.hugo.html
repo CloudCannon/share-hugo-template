@@ -1,5 +1,5 @@
 <form class="c-form --{{ .content_width | lower }} --{{ .content_alignment | lower }}" {{if .button.url }} action="{{.button.url}}" {{ end }}>
     {{ range .inputs }}
-        {{ partial "bookshop" (slice "input" . )}}
+        {{ partial "bookshop" (slice "cloudcannon/input" . )}}
     {{ end }}
 </form>

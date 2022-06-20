@@ -8,6 +8,6 @@
                 {{ if eq .background_overlay.gradient_type "solid" }} class="gradient" style="background-color: {{ .background_overlay.color | safeCSS }};" {{ end }}
             {{ end }}
         ></div>
-        {{ partial "bookshop" (slice "cta" .cta )}}
+        {{ partial "bookshop" (slice "cloudcannon/cta" .cta )}}
     </div>
 </section>

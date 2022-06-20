@@ -2,9 +2,9 @@
     <div class="__content --{{ .cta_block.text_color | lower }}" {{ if not .cta_block.background_color.white }} style="background-color: {{ .cta_block.background_color.color }};" {{ end }}>
         {{ if eq .image_alignment "Left" }}
             <div class="__image" style="background-image: url({{ .image.path }});"></div>
-            {{ partial "bookshop" (slice "cta" .cta_block.cta )}}
+            {{ partial "bookshop" (slice "cloudcannon/cta" .cta_block.cta )}}
         {{ else }}
-            {{ partial "bookshop" (slice "cta" .cta_block.cta )}}
+            {{ partial "bookshop" (slice "cloudcannon/cta" .cta_block.cta )}}
             <div class="__image" style="background-image: url({{ .image.path }});"></div>
         {{ end }}
     </div>

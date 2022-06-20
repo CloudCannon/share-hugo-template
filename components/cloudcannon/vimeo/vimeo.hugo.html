@@ -8,6 +8,6 @@
 
 <div class="c-vimeo --{{ .content_width | lower }}">
     {{ if .video_id }}
-        {{ partial "bookshop" (slice "embed" (dict "url" $vimeo_url ))}}
+        {{ partial "bookshop" (slice "cloudcannon/embed" (dict "url" $vimeo_url ))}}
     {{ end }}
 </div>
