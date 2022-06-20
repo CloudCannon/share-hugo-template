@@ -10,13 +10,13 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  content: bookshop:paragraph
+  content: bookshop:cloudcannon/paragraph
   url: /
   open_in_new_tab: true
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
-  content: bookshop:paragraph
+  content: bookshop:cloudcannon/paragraph
   url: "https://cloudcannon.com/"
 
 

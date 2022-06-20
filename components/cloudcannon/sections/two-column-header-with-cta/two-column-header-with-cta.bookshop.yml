@@ -14,7 +14,7 @@ blueprint:
     path: ""
     alt: ""
   cta_block:
-    cta: bookshop:cta
+    cta: bookshop:cloudcannon/cta
     text_color: Primary
     background_color:
       white: true
@@ -22,7 +22,7 @@ blueprint:
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
-  image: 
+  image:
     path: http://placekitten.com/580/300
     alt: Image alt
 

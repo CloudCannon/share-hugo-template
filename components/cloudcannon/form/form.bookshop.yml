@@ -9,7 +9,7 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  inputs: [bookshop:input]
+  inputs: [bookshop:cloudcannon/input]
   content_width: Full
   content_alignment: Left
 
