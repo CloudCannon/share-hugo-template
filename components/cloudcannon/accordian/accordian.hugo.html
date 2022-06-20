@@ -1,8 +1,0 @@
-<div class="c-accordian --{{ .content_alignment | lower }} --{{ .content_width | lower }}">
-    {{ range .accordians }}
-        <details class="c-accordian__dropdown">
-            <summary class="c-accordian__dropdown__summary">{{ .heading }}</summary>
-            {{ partial "bookshop" (slice "cloudcannon/paragraph" .content )}}
-        </details>
-    {{ end }}
-</div>

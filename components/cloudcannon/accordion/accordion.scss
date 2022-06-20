@@ -1,4 +1,4 @@
-.c-accordian {
+.c-accordion {
     border-top: 2px solid #333333;
     &.--half {
         max-width: 580px;
@@ -6,7 +6,7 @@
     &.--full {
         max-width: 1200px;
     }
-    
+
     &__dropdown {
         border-bottom: 2px solid #333333;
         padding: 20px 0;
@@ -35,8 +35,8 @@
                 right: 0;
             }
 
-              
-            &::marker, /* Latest Chrome, Edge, Firefox */ 
+
+            &::marker, /* Latest Chrome, Edge, Firefox */
             &::-webkit-details-marker /* Safari */ {
                 display: none;
             }

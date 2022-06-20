@@ -2,8 +2,8 @@
 spec:
   structures:
     - content_blocks
-  label: Accordian
-  description: 
+  label: Accordion
+  description:
   icon:
   tags: []
 
@@ -11,18 +11,18 @@ spec:
 blueprint:
   content_width: Full
   content_alignment: Center
-  accordians:
+  accordions:
     - heading:
       content: bookshop:paragraph
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
-  accordians:
-    - heading: BookShop Starter Library 
+  accordions:
+    - heading: BookShop Starter Library
       content: bookshop:paragraph
-    - heading: BookShop Starter Library 
+    - heading: BookShop Starter Library
       content: bookshop:paragraph
-    - heading: BookShop Starter Library 
+    - heading: BookShop Starter Library
       content: bookshop:paragraph
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
