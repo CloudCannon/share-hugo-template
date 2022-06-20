@@ -13,8 +13,8 @@ blueprint:
   content_alignment: Left
   vertical_alignment: Top
   blocks:
-    - bookshop:structure:simple_blocks!(headline)
-    - bookshop:structure:simple_blocks!(button)
+    - bookshop:structure:simple_blocks!(cloudcannon/headline)
+    - bookshop:structure:simple_blocks!(cloudcannon/button)
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
