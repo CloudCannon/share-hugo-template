@@ -16,23 +16,23 @@ blueprint:
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   inputs:
-    - _bookshop_name: input
+    - _bookshop_name: cloudcannon/input
       label: First Name
       placeholder: Name
-      default_value: 
+      default_value:
       name: ""
       input_type: text
       is_required: true
       style: Primary
-    - _bookshop_name: input
+    - _bookshop_name: cloudcannon/input
       label: Email
       placeholder: Email
-      default_value: 
+      default_value:
       name: ""
       input_type: text
       is_required: true
       style: Primary
-    - _bookshop_name: input
+    - _bookshop_name: cloudcannon/input
       label: Message
       placeholder: Enter paragraph here
       default_value: submit
@@ -40,7 +40,7 @@ preview:
       input_type: textarea
       is_required: true
       style: Primary
-    - _bookshop_name: input
+    - _bookshop_name: cloudcannon/input
       label: ""
       placeholder: ""
       default_value: submit

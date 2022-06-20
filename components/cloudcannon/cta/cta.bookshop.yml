@@ -3,7 +3,7 @@ spec:
   structures:
     - content_blocks
   label: CTA
-  description: 
+  description:
   icon:
   tags: []
 
@@ -18,11 +18,11 @@ blueprint:
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
-  blocks: 
-    - _bookshop_name: headline
+  blocks:
+    - _bookshop_name: cloudcannon/headline
       text: BookShop Starter Library ipsum dolo sitor orciarius nato quntess, nas cheturo ridicu lusos mus.
       heading_level: h2
-    - _bookshop_name: button
+    - _bookshop_name: cloudcannon/button
       text: Learn more
       disabled: false
       url: /
