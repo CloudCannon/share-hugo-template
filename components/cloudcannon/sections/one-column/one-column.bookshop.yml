@@ -9,9 +9,11 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  content_width: Medium
-  content_alignment: Left
-  blocks: [bookshop:structure:content_blocks]
+  style:
+    content_width: Medium
+    content_alignment: Left
+  content:
+    blocks: [bookshop:structure:content_blocks]
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:

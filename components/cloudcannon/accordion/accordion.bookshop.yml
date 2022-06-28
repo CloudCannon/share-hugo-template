@@ -9,21 +9,24 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  content_width: Full
-  content_alignment: Center
-  accordions:
-    - heading:
-      content: bookshop:cloudcannon/paragraph
+  style:
+    content_width: Full
+    content_alignment: Center
+  content:
+    accordions:
+      - heading:
+        content: bookshop:cloudcannon/paragraph
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
-  accordions:
-    - heading: BookShop Starter Library
-      content: bookshop:cloudcannon/paragraph
-    - heading: BookShop Starter Library
-      content: bookshop:cloudcannon/paragraph
-    - heading: BookShop Starter Library
-      content: bookshop:cloudcannon/paragraph
+  content:
+    accordions:
+      - heading: BookShop Starter Library
+        content: bookshop:cloudcannon/paragraph
+      - heading: BookShop Starter Library
+        content: bookshop:cloudcannon/paragraph
+      - heading: BookShop Starter Library
+        content: bookshop:cloudcannon/paragraph
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:

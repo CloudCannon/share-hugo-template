@@ -10,12 +10,14 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  text: Button
-  disabled: false
-  url: /
-  open_in_new_tab: false
-  style: Primary
-  size: Responsive
+  style:
+    style: Primary
+    size: Responsive
+    disabled: false
+  content:
+    text: Button
+    url: /
+    open_in_new_tab: false
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:

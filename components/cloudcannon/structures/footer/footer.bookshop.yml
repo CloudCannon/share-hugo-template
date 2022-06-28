@@ -9,65 +9,67 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  navigation_links:
-    - page_name:
-      links:
-        - name:
-          url: 
-  company_name:
-  terms_and_conditions_links:
-    - name:
-      url:
+  content:
+    navigation_links:
+      - page_name:
+        links:
+          - name:
+            url:
+    company_name:
+    terms_and_conditions_links:
+      - name:
+        url:
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
-  navigation_links:
-    - page_name: Page
-      links:
-        - name: Subpage, section or anchor
-          url: /
-        - name: Subpage, section or anchor
-          url: /
-        - name: Subpage, section or anchor
-          url: /
-    - page_name: Page
-      links:
-        - name: Subpage, section or anchor
-          url: /
-        - name: Subpage, section or anchor
-          url: /
-        - name: Subpage, section or anchor
-          url: /
-        - name: Subpage, section or anchor
-          url: /
-        - name: Subpage, section or anchor
-          url: /
-    - page_name: Page
-      links:
-        - name: Subpage, section or anchor
-          url: /
-        - name: Subpage, section or anchor
-          url: /
-        - name: Subpage, section or anchor
-          url: /
-    - page_name: Page
-      links:
-        - name: Subpage, section or anchor
-          url: /
-        - name: Subpage, section or anchor
-          url: /
-        - name: Subpage, section or anchor
-          url: /
-        - name: Subpage, section or anchor
-          url: /
-  company_name: Company name
-  terms_and_conditions_links:
-    - name: Privacy
-      url: /
-    - name: Terms
-      url: /
-    - name: Sitemap
-      url: /
+  content:
+    navigation_links:
+      - page_name: Page
+        links:
+          - name: Subpage, section or anchor
+            url: /
+          - name: Subpage, section or anchor
+            url: /
+          - name: Subpage, section or anchor
+            url: /
+      - page_name: Page
+        links:
+          - name: Subpage, section or anchor
+            url: /
+          - name: Subpage, section or anchor
+            url: /
+          - name: Subpage, section or anchor
+            url: /
+          - name: Subpage, section or anchor
+            url: /
+          - name: Subpage, section or anchor
+            url: /
+      - page_name: Page
+        links:
+          - name: Subpage, section or anchor
+            url: /
+          - name: Subpage, section or anchor
+            url: /
+          - name: Subpage, section or anchor
+            url: /
+      - page_name: Page
+        links:
+          - name: Subpage, section or anchor
+            url: /
+          - name: Subpage, section or anchor
+            url: /
+          - name: Subpage, section or anchor
+            url: /
+          - name: Subpage, section or anchor
+            url: /
+    company_name: Company name
+    terms_and_conditions_links:
+      - name: Privacy
+        url: /
+      - name: Terms
+        url: /
+      - name: Sitemap
+        url: /
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:

@@ -9,23 +9,25 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  logo: ""
-  links:
-    - name: ""
-      url: ""
+  content:
+    logo: ""
+    links:
+      - name: ""
+        url: ""
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
-  logo: "http://placekitten.com/90/40"
-  links:
-    - name: Features
-      url: /
-    - name: Blog
-      url: /
-    - name: Documentation
-      url: /
-    - name: Contact
-      url: /
+  content:
+    logo: "http://placekitten.com/90/40"
+    links:
+      - name: Features
+        url: /
+      - name: Blog
+        url: /
+      - name: Documentation
+        url: /
+      - name: Contact
+        url: /
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:

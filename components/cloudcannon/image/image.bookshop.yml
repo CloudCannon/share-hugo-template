@@ -9,17 +9,20 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  content_width: Large
-  content_alignment: Center
-  image:
-    path: ""
-    alt: ""
+  style:
+    content_width: Large
+    content_alignment: Center
+  content:
+    image:
+      path: ""
+      alt: ""
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
-  image: 
-    path: http://placekitten.com/580/300
-    alt: Image alt
+  content:
+    image:
+      path: http://placekitten.com/580/300
+      alt: Image alt
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:

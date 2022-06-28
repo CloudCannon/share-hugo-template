@@ -9,33 +9,36 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  content_width: Large
-  content_alignment: Left
-  logo_links:
-    - url: ""
-      logo: ""
-      alt: ""
-      open_in_new_tab: true
+  style:
+    content_width: Large
+    content_alignment: Left
+  content:
+    logo_links:
+      - url: ""
+        logo: ""
+        alt: ""
+        open_in_new_tab: true
 
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
-  logo_links:
-    - url: http://facebook.com
-      logo: http://placekitten.com/48/48
-      alt: Facebook website
-    - url: http://twitter.com
-      logo: http://placekitten.com/48/48
-      alt: Twitter website
-    - url: http://instagram.com
-      logo: http://placekitten.com/48/48
-      alt: Instagram website
-    - url: http://linkedin.com
-      logo: http://placekitten.com/48/48
-      alt: LinkedIn website
-    - url: http://youtube.com
-      logo: http://placekitten.com/48/48
-      alt: Youtube website
+  content:
+    logo_links:
+      - url: http://facebook.com
+        logo: http://placekitten.com/48/48
+        alt: Facebook website
+      - url: http://twitter.com
+        logo: http://placekitten.com/48/48
+        alt: Twitter website
+      - url: http://instagram.com
+        logo: http://placekitten.com/48/48
+        alt: Instagram website
+      - url: http://linkedin.com
+        logo: http://placekitten.com/48/48
+        alt: LinkedIn website
+      - url: http://youtube.com
+        logo: http://placekitten.com/48/48
+        alt: Youtube website
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:

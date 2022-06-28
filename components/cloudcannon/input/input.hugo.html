@@ -1,14 +1,14 @@
-<div class="c-input --{{ .input_type }}">
-    {{ if ne .input_type "submit" }}
-        {{ if .label }}
-            <label for="{{ .name }}">{{ .label }}{{ if .is_required }}*{{ end }}</label>
+<div class="c-input --{{ .style.input_type }}">
+    {{ if ne .style.input_type "submit" }}
+        {{ if .content.label }}
+            <label for="{{ .content.name }}">{{ .content.label }}{{ if .style.is_required }}*{{ end }}</label>
         {{ end }}
-        {{ if eq .input_type "textarea" }}
-            <textarea id="{{ .name }}" name="{{ .name }}" rows="6" placeholder="{{ .placeholder }}" value="{{ .default_value }}" {{ if .is_required }} required {{ end }}></textarea>
+        {{ if eq .style.input_type "textarea" }}
+            <textarea id="{{ .content.name }}" name="{{ .content.name }}" rows="6" placeholder="{{ .content.placeholder }}" value="{{ .content.default_value }}" {{ if .style.is_required }} required {{ end }}></textarea>
         {{ else }}
-            <input id="{{ .name }}" class="text" name="{{ .name }}" type="{{ .input_type }}" placeholder="{{ .placeholder }}" value="{{ .default_value }}" {{ if .is_required }} required {{ end }}/>
+            <input id="{{ .content.name }}" class="text" name="{{ .content.name }}" type="{{ .style.input_type }}" placeholder="{{ .content.placeholder }}" value="{{ .content.default_value }}" {{ if .style.is_required }} required {{ end }}/>
         {{ end }}
-    {{ else if eq .input_type "submit" }}
-        <input class="c-button --{{ .style | lower }}" type="submit" value="{{ .default_value }}"/>
+    {{ else if eq .style.input_type "submit" }}
+        <input class="c-button --{{ .style | lower }}" type="submit" value="{{ .content.default_value }}"/>
     {{ end }}
 </div>

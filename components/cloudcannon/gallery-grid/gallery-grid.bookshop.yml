@@ -9,15 +9,17 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  images: [bookshop:cloudcannon/image]
+  content:
+    images: [bookshop:cloudcannon/image]
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
-  images:
-    - bookshop:cloudcannon/image
-    - bookshop:cloudcannon/image
-    - bookshop:cloudcannon/image
-    - bookshop:cloudcannon/image
+  content:
+    images:
+      - bookshop:cloudcannon/image
+      - bookshop:cloudcannon/image
+      - bookshop:cloudcannon/image
+      - bookshop:cloudcannon/image
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:

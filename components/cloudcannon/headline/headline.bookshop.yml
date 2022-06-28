@@ -10,12 +10,15 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  text: Headline
-  heading_level: h1
+  style:
+    heading_level: h1
+  content:
+    text: Headline
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
-  text: BookShop Starter Library ipsum dolor sit amet scelerisque nisl.
+  content:
+    text: BookShop Starter Library ipsum dolor sit amet scelerisque nisl.
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:

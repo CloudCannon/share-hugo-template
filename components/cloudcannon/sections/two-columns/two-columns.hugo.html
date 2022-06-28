@@ -1,11 +1,11 @@
 <div class="c-two-columns">
     <div class="--left">
-        {{ range .left_column }}
+        {{ range .content.left_column }}
             {{ partial "bookshop" . }}
         {{ end }}
     </div>
     <div class="--right">
-        {{ range .right_column }}
+        {{ range .content.right_column }}
             {{ partial "bookshop" . }}
         {{ end }}
     </div>

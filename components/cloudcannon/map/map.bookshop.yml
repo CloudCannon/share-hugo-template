@@ -9,9 +9,12 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  content_width: Large
-  api_key: ""
-  location: ""
+  style:
+    content_width: Large
+    content_alignment: Middle
+  content:
+    api_key: ""
+    location: ""
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:

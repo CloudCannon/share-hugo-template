@@ -1,12 +1,12 @@
-<div class="c-socials --{{ .content_width | lower }}">
-    <ul class="c-socials__list --{{ .content_alignment | lower }}">
-        {{ range .logo_links }}
+<div class="c-socials --{{ .style.content_width | lower }}">
+    <ul class="c-socials__list --{{ .style.content_alignment | lower }}">
+        {{ range .content.logo_links }}
             <li>
             <a
                 href="{{ .url }}"
-                {{ if .open_in_new_tab }} 
-                    rel="noopener" 
-                    target="_blank" 
+                {{ if .open_in_new_tab }}
+                    rel="noopener"
+                    target="_blank"
                 {{ end }}
             ><img
                 loading="lazy"

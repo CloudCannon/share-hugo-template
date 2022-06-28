@@ -9,24 +9,27 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  content_width: Large
-  content_alignment: Left
-  text_color: Primary
-  include_background_color: false
-  background_color: "#F0F0F0"
-  include_background_image: false
-  background_image_path:
-  background_overlay:
-    include: true
-    gradient_type: Linear
-    color: rgba(0, 0, 0, 0.25)
-  cta: bookshop:cloudcannon/cta!
+  style:
+    content_width: Large
+    content_alignment: Left
+    text_color: Primary
+  content:
+    include_background_color: false
+    background_color: "#F0F0F0"
+    include_background_image: false
+    background_image_path:
+    background_overlay:
+      include: true
+      gradient_type: Linear
+      color: rgba(0, 0, 0, 0.25)
+    cta: bookshop:cloudcannon/cta!
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
-  include_background_image: true
-  background_image_path: http://placekitten.com/1500/800
-  cta: bookshop:cloudcannon/cta
+  content:
+    include_background_image: true
+    background_image_path: http://placekitten.com/1500/800
+    cta: bookshop:cloudcannon/cta
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:

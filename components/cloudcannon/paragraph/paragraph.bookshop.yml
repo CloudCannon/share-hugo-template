@@ -10,16 +10,18 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  text: >-
-    Paragraph text
+  content:
+    text: >-
+      Paragraph text
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
-  text: >-
-    Etiam porta sem malesuada magna mollis euismod.
-    Nulla vitae elit libero, a pharetra augue.
-    Etiam porta sem malesuada magna mollis euismod.
-    Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-    Sed posuere consectetur est at lobortis.
+  content:
+    text: >-
+      Etiam porta sem malesuada magna mollis euismod.
+      Nulla vitae elit libero, a pharetra augue.
+      Etiam porta sem malesuada magna mollis euismod.
+      Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+      Sed posuere consectetur est at lobortis.
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:

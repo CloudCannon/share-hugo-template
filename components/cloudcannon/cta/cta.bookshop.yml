@@ -9,26 +9,29 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  content_width: Large
-  content_alignment: Left
-  vertical_alignment: Top
-  blocks:
-    - bookshop:structure:simple_blocks!(cloudcannon/headline)
-    - bookshop:structure:simple_blocks!(cloudcannon/button)
+  style:
+    content_width: Large
+    content_alignment: Left
+    vertical_alignment: Top
+  content:
+    blocks:
+      - bookshop:structure:simple_blocks!(cloudcannon/headline)
+      - bookshop:structure:simple_blocks!(cloudcannon/button)
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
-  blocks:
-    - _bookshop_name: cloudcannon/headline
-      text: BookShop Starter Library ipsum dolo sitor orciarius nato quntess, nas cheturo ridicu lusos mus.
-      heading_level: h2
-    - _bookshop_name: cloudcannon/button
-      text: Learn more
-      disabled: false
-      url: /
-      open_in_new_tab: false
-      style: Primary
-      size: Responsive
+  content:
+    blocks:
+      - _bookshop_name: cloudcannon/headline
+        text: BookShop Starter Library ipsum dolo sitor orciarius nato quntess, nas cheturo ridicu lusos mus.
+        heading_level: h2
+      - _bookshop_name: cloudcannon/button
+        text: Learn more
+        disabled: false
+        url: /
+        open_in_new_tab: false
+        style: Primary
+        size: Responsive
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:

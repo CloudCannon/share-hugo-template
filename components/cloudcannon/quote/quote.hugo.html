@@ -1,6 +1,6 @@
-<figure class="c-quote --{{ .content_width | lower }} --{{ .content_alignment | lower }}">
+<figure class="c-quote --{{ .style.content_width | lower }} --{{ .style.content_alignment | lower }}">
     <blockquote>
-        <p>“{{ .quote }}”</p>
+        <p>“{{ .content.quote }}”</p>
     </blockquote>
-    <figcaption>{{.source}}</figcaption>
+    <figcaption>{{.content.source}}</figcaption>
 </figure>

@@ -1,7 +1,7 @@
-<div class="c-image --{{ .content_alignment | lower }} --{{ .content_width | lower }}">
+<div class="c-image --{{ .style.content_alignment | lower }} --{{ .style.content_width | lower }}">
     <img
         loading="lazy"
-        src="{{ .image.path }}"
-        alt="{{ .image.alt }}"
+        src="{{ .content.image.path }}"
+        alt="{{ .content.image.alt }}"
     />
 </div>

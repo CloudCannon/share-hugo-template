@@ -1,5 +1,5 @@
-<div class="c-one-column --{{ .content_width | lower }} --{{ .content_alignment | lower }}">
-{{ range .blocks }}
+<div class="c-one-column --{{ .style.content_width | lower }} --{{ .style.content_alignment | lower }}">
+{{ range .content.blocks }}
     {{ partial "bookshop" . }}
 {{ end }}
 </div>

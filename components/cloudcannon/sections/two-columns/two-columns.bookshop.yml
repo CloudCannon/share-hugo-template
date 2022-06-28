@@ -9,8 +9,9 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  left_column: [bookshop:structure:content_blocks]
-  right_column: [bookshop:structure:content_blocks]
+  content:
+    left_column: [bookshop:structure:content_blocks]
+    right_column: [bookshop:structure:content_blocks]
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:

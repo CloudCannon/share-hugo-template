@@ -9,16 +9,19 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  content_width: Large
-  video_id: ""
-  autoplay: false
-  loop: false
-  mute: false
-  no_player_controls: true
+  style:
+    content_width: Large
+  content:
+    video_id: ""
+    autoplay: false
+    loop: false
+    mute: false
+    no_player_controls: true
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
-  video_id: riXoAr6gO-E
+  content:
+    video_id: riXoAr6gO-E
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:

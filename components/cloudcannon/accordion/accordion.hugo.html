@@ -1,5 +1,5 @@
-<div class="c-accordion --{{ .content_alignment | lower }} --{{ .content_width | lower }}">
-    {{ range .accordions }}
+<div class="c-accordion --{{ .style.content_alignment | lower }} --{{ .style.content_width | lower }}">
+    {{ range .content.accordions }}
         <details class="c-accordion__dropdown">
             <summary class="c-accordion__dropdown__summary">{{ .heading }}</summary>
             {{ partial "bookshop" (slice "cloudcannon/paragraph" .content )}}

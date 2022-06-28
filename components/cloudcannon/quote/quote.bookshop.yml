@@ -10,17 +10,20 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  quote: Quote text
-  source: Quote source
-  content_width: Medium
-  content_alignment: Left
+  content:
+    quote: Quote text
+    source: Quote source
+  style:
+    content_width: Medium
+    content_alignment: Left
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
-  quote: >-
-    Orci varius natoque penatibus et magnis dis parturient montes,
-    nascetur ridiculus mus. Mauris sed tempus odio, vel malesuada enim.
-    Donec aliquet at lectus eget accumsan
+  content:
+    quote: >-
+      Orci varius natoque penatibus et magnis dis parturient montes,
+      nascetur ridiculus mus. Mauris sed tempus odio, vel malesuada enim.
+      Donec aliquet at lectus eget accumsan
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:

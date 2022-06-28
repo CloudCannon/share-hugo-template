@@ -9,45 +9,48 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  inputs: [bookshop:cloudcannon/input]
-  content_width: Full
-  content_alignment: Left
+  style:
+    content_width: Full
+    content_alignment: Left
+  content:
+    inputs: [bookshop:cloudcannon/input]
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
-  inputs:
-    - _bookshop_name: cloudcannon/input
-      label: First Name
-      placeholder: Name
-      default_value:
-      name: ""
-      input_type: text
-      is_required: true
-      style: Primary
-    - _bookshop_name: cloudcannon/input
-      label: Email
-      placeholder: Email
-      default_value:
-      name: ""
-      input_type: text
-      is_required: true
-      style: Primary
-    - _bookshop_name: cloudcannon/input
-      label: Message
-      placeholder: Enter paragraph here
-      default_value: submit
-      name: ""
-      input_type: textarea
-      is_required: true
-      style: Primary
-    - _bookshop_name: cloudcannon/input
-      label: ""
-      placeholder: ""
-      default_value: submit
-      name: ""
-      input_type: submit
-      is_required: true
-      style: Primary
+  content:
+    inputs:
+      - _bookshop_name: cloudcannon/input
+        label: First Name
+        placeholder: Name
+        default_value:
+        name: ""
+        input_type: text
+        is_required: true
+        style: Primary
+      - _bookshop_name: cloudcannon/input
+        label: Email
+        placeholder: Email
+        default_value:
+        name: ""
+        input_type: text
+        is_required: true
+        style: Primary
+      - _bookshop_name: cloudcannon/input
+        label: Message
+        placeholder: Enter paragraph here
+        default_value: submit
+        name: ""
+        input_type: textarea
+        is_required: true
+        style: Primary
+      - _bookshop_name: cloudcannon/input
+        label: ""
+        placeholder: ""
+        default_value: submit
+        name: ""
+        input_type: submit
+        is_required: true
+        style: Primary
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:

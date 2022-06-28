@@ -2,18 +2,20 @@
 spec:
   structures:
   label: Iframe embed
-  description: 
+  description:
   icon:
   tags: []
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  url: ""
+  content:
+    url: ""
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
-  url: https://player.vimeo.com/video/622005181?h=cf41e0814a&app_id=122963
-  
+  content:
+    url: https://player.vimeo.com/video/622005181?h=cf41e0814a&app_id=122963
+
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
   url:

@@ -8,18 +8,22 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  label: ""
-  placeholder: ""
-  default_value: ""
-  name: ""
-  input_type: text
-  is_required: true
+  style:
+    input_type: text
+    is_required: true
+  content:
+    label: ""
+    placeholder: ""
+    default_value: ""
+    name: ""
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
-  placeholder: Email Address
-  name: email
-  input_type: email
+  content:
+    placeholder: Email Address
+    name: email
+  style:
+    input_type: email
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
