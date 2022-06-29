@@ -11,7 +11,7 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   style:
-    style: Primary
+    type: Primary
     size: Responsive
     disabled: false
   content:
