@@ -1,5 +1,6 @@
 .c-accordion {
-    border-top: 2px solid #333333;
+    box-sizing: border-box;
+
     &.--half {
         max-width: 580px;
     }
@@ -8,33 +9,30 @@
     }
 
     &__dropdown {
-        border-bottom: 2px solid #333333;
-        padding: 20px 0;
-
         &[open] > &__summary {
             &::after {
-                transform: rotate(180deg);
+                content: "-";
             }
         }
 
         &__summary {
-            list-style: none;
             font-weight: var(--font-weight-large);
             font-size: var(--font-size-small);
             line-height: 32px;
+            padding: 40px;
+            cursor: pointer;
+            text-align: left;
             display: flex;
             align-items: center;
             position: relative;
+            padding-right: 80px;
 
             &::after {
-                // TODO: add icon image
-                content: url("http://placekitten.com/32/32");
-                width: 32px;
-                height: 32px;
+                content: "+";
                 position: absolute;
-                right: 0;
+                right: 40px;
+                top: 40px;
             }
-
 
             &::marker, /* Latest Chrome, Edge, Firefox */
             &::-webkit-details-marker /* Safari */ {
@@ -43,8 +41,9 @@
         }
 
         p {
+            text-align: left;
             margin: 0;
-            padding-top: 10px;
+            padding: 0 40px 40px 40px;
         }
     }
 }

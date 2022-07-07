@@ -13,7 +13,8 @@ blueprint:
     content_width: Full
     content_alignment: Left
   content:
-    inputs: [bookshop:cloudcannon/input]
+    inputs: [bookshop:cloudcannon/simple/input]
+    submit_button: bookshop:cloudcannon/simple/button!
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:

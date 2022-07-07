@@ -13,20 +13,14 @@ blueprint:
     content_width: Full
     content_alignment: Center
   content:
-    accordions:
-      - heading:
-        content: bookshop:cloudcannon/paragraph
+    heading:
+    text: bookshop:cloudcannon/simple/paragraph
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   content:
-    accordions:
-      - heading: BookShop Starter Library
-        content: bookshop:cloudcannon/paragraph
-      - heading: BookShop Starter Library
-        content: bookshop:cloudcannon/paragraph
-      - heading: BookShop Starter Library
-        content: bookshop:cloudcannon/paragraph
+    heading: BookShop Starter Library
+    text: bookshop:cloudcannon/simple/paragraph
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
@@ -36,10 +30,3 @@ _inputs:
       values:
         - Full
         - Half
-  content_alignment:
-    type: select
-    options:
-      values:
-        - Left
-        - Center
-        - Right

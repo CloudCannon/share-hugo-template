@@ -11,7 +11,7 @@
     label {
         padding-bottom: 10px;
     }
-    
+
     .text {
         height: 64px;
     }
@@ -37,6 +37,7 @@
 
     label, .text, textarea {
         width: 100%;
+        box-sizing: border-box;
     }
 
     .c-button {

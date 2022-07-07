@@ -1,0 +1,12 @@
+<section class="c-logo-ticker">
+    {{ $height := .style.height }}
+    {{ range .content.logos }}
+        <a href="{{ .url }}" target="_blank" style="height: {{ $height }}px;">
+            <img
+                loading="lazy"
+                src="{{ .image }}"
+                alt="{{ .alt }}"
+            />
+        </a>
+    {{ end }}
+</section>

@@ -1,10 +1,10 @@
 # Metadata about this component, to be used in the CMS
 spec:
   structures:
-    - content_blocks
-  label: Image
-  description: Single image
-  icon:
+    - sections
+  label: Hero image
+  description: Hero image that spans the page
+  icon: panorama
   tags: []
 
 # Defines the structure of this component, as well as the default values

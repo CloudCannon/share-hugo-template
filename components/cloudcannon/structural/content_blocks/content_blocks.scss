@@ -1,0 +1,47 @@
+.c-content_blocks {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	height: fit-content;
+	flex-flow: column wrap;
+
+	&.--vertical {
+		flex-direction: column;
+		row-gap: 20px;
+	}
+
+	&.--horizontal {
+		flex-direction: row;
+		column-gap: 80px;
+
+		@media screen and (max-width: 599px) {
+			flex-direction: column;
+		}
+	}
+
+	.block-wrapper {
+		height: 100%;
+	}
+
+	> div,
+	> .c-content_blocks {
+		flex: 1 1;
+	}
+
+	&.--top {
+		align-self: flex-start;
+	}
+
+	.--horizontal &.--middle {
+		align-self: center;
+	}
+
+	.--vertical &.--middle {
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+
+	&.--bottom {
+		align-self: flex-end;
+	}
+}

@@ -1,4 +1,4 @@
-.c-image {
+.c-hero-image {
     &.--small {
         max-width: 580px;
     }
@@ -17,8 +17,8 @@
     &.--center {
         text-align: center;
     }
+
     img {
-        border-radius: var(--radius-image);
-        width: 100%
+        max-width: 100%;
     }
 }

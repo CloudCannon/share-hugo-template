@@ -10,12 +10,12 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
+  style:
+    content_alignment: Left
   content:
     quote: Quote text
     source: Quote source
-  style:
-    content_width: Medium
-    content_alignment: Left
+    image:
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -29,13 +29,6 @@ preview:
 _inputs:
   quote:
     type: textarea
-  content_width:
-    type: select
-    options:
-      values:
-        - Small
-        - Medium
-        - Large
   content_alignment:
     type: select
     options:

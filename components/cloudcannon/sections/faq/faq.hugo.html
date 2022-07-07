@@ -1,0 +1,17 @@
+<section class="c-faq">
+	<div class="__content-wrapper">
+		<div class="__content --{{ .style.content_width | lower }} --{{ .style.content_alignment | lower }}
+		{{ if .style.borders }} --with-borders {{ end }}">
+			<h3>
+				{{ .content.heading }}
+			</h3>
+
+			{{ $faq := . }}
+			{{ range .content.items }}
+			<div class='__item-wrapper' {{ if $faq.style.custom_background_color }} style="background-color: {{ $faq.style.background_color }};" {{ end }}>
+				{{ partial "bookshop" (slice "cloudcannon/accordion" . ) }}
+			</div>
+			{{ end }}
+		</div>
+	</div>
+</section>

@@ -1,5 +1,9 @@
 <form class="c-form --{{ .style.content_width | lower }} --{{ .style.content_alignment | lower }}" {{if .button.url }} action="{{.style.button.url}}" {{ end }}>
     {{ range .content.inputs }}
-        {{ partial "bookshop" (slice "cloudcannon/input" . )}}
+        {{ partial "bookshop" (slice "cloudcannon/simple/input" . )}}
+    {{ end }}
+
+    {{ with .content.submit_button }}
+        {{ partial "bookshop" . }}
     {{ end }}
 </form>

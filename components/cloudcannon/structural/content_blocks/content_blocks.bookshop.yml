@@ -1,27 +1,37 @@
 # Metadata about this component, to be used in the CMS
 spec:
   structures:
-    - sections
-  label: "One Column"
-  description:
-  icon: table_rows
+    - content_blocks
+  label: "Content Blocks"
+  description: "Add ordered blocks of content"
+  icon: category
   tags: []
 
 # Defines the structure of this component, as well as the default values
 blueprint:
   style:
+    flow: Vertical
+    vertical_alignment: Middle
     custom_background_color: false
-    background_color: '#f5f5f5'
-    content_alignment: Center
-    content_width: Large
+    background_color: "#ffffff"
   content:
-    blocks: [bookshop:structure:content_blocks]
+    blocks:
+      - bookshop:structure:content_blocks
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
+  flow:
+    type: choice
+    options:
+      value_key: name
+      values:
+        - name: Vertical
+          icon: table_rows
+        - name: Horizontal
+          icon: view_column
   custom_background_color:
     type: switch
   background_color:

@@ -2,19 +2,30 @@
 spec:
   structures:
     - sections
-  label: Spacer
-  description: Spacer for between components
-  icon:
+  label: "Logo ticker"
+  description: Show off some of the big names associated with your product
+  icon: collections
   tags: []
 
 # Defines the structure of this component, as well as the default values
 blueprint:
   style:
-    height: 120
-
+    height: 45
+  content:
+    logos:
+      - image:
+        alt:
+        link:
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
+  style:
+    height: 45
+  content:
+    logos:
+      - image: http://placekitten.com/580/300
+        alt: Logo alt
+        link: '/'
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
@@ -22,5 +33,7 @@ _inputs:
     type: range
     options:
       step: 1
-      max: 200
-      min: 40
+      min: 20
+      max: 100
+  alt:
+    type: text

@@ -4,17 +4,46 @@ spec:
     - sections
   label: "Two Columns"
   description:
-  icon:
+  icon: vertical_split
   tags: []
 
 # Defines the structure of this component, as well as the default values
 blueprint:
+  style:
+    gap: 40
   content:
-    left_column: [bookshop:structure:content_blocks]
-    right_column: [bookshop:structure:content_blocks]
+    left_column:
+      style:
+        content_alignment: Left
+        vertical_alignment: Top
+        custom_background_color: false
+        background_color: '#f5f5f5'
+      content:
+        blocks:
+          - bookshop:structure:content_blocks
+    right_column:
+      style:
+        content_alignment: Left
+        vertical_alignment: Top
+        custom_background_color: false
+        background_color: '#f5f5f5'
+      content:
+        blocks:
+          - bookshop:structure:content_blocks
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
+  gap:
+    type: range
+    options:
+      min: 5
+      max: 200
+      step: 1
+  custom_background_color:
+    type: switch
+  background_color:
+    type: color
+    hidden: "custom_background_color"

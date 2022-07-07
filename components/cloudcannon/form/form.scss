@@ -2,15 +2,12 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-
-    &.--half {
-        max-width: 580px;
-    }
+    width: 100%;
 
     .c-input label {
         text-align: left;
     }
-    
+
     &.--center {
         .c-input {
             align-items: center;

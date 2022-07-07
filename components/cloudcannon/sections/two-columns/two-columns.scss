@@ -5,13 +5,44 @@
     width: 100%;
     gap: 40px;
     max-width: 1200px;
-    margin: 0 auto;
 
-    >.--left {
-        flex: 1;
+    @media screen and (max-width: 599px) {
+        flex-flow: column;
     }
 
-    >.--right {
+    >.column {
         flex: 1;
+        display: flex;
+        gap: 20px;
+        padding: 40px;
+        flex-flow: column;
+        border-radius: var(--radius);
+
+        &.--top {
+            justify-content: flex-start;
+        }
+
+        &.--middle {
+            justify-content: center;
+        }
+
+        &.--bottom {
+            justify-content: flex-end;
+        }
+
+        &.--left {
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        &.--center {
+            align-items: center;
+            text-align: center;
+        }
+
+        &.--right {
+            align-items: flex-end;
+            text-align: right;
+        }
     }
 }

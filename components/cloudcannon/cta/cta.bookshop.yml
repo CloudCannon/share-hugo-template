@@ -15,17 +15,17 @@ blueprint:
     vertical_alignment: Top
   content:
     blocks:
-      - bookshop:structure:simple_blocks!(cloudcannon/headline)
-      - bookshop:structure:simple_blocks!(cloudcannon/button)
+      - bookshop:structure:simple_blocks!(cloudcannon/simple/headline)
+      - bookshop:structure:simple_blocks!(cloudcannon/simple/button)
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   content:
     blocks:
-      - _bookshop_name: cloudcannon/headline
+      - _bookshop_name: cloudcannon/simple/headline
         text: BookShop Starter Library ipsum dolo sitor orciarius nato quntess, nas cheturo ridicu lusos mus.
         heading_level: h2
-      - _bookshop_name: cloudcannon/button
+      - _bookshop_name: cloudcannon/simple/button
         text: Learn more
         disabled: false
         url: /
@@ -42,17 +42,3 @@ _inputs:
         - Small
         - Medium
         - Large
-  content_alignment:
-    type: select
-    options:
-      values:
-        - Left
-        - Center
-        - Right
-  vertical_alignment:
-    type: select
-    options:
-      values:
-        - Top
-        - Middle
-        - Bottom
