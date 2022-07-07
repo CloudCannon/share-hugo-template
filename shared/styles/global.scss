@@ -2,7 +2,7 @@
 // as well as in the component browser and screenshots.
 
 :root {
-    --font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif; 
+    --font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
     --font-size-extra-large: 54px;
     --font-size-large: 48px;
     --font-size-medium: 36px;
@@ -13,12 +13,12 @@
     --font-weight-large: 700;
     --font-weight-body: 400;
     --font-weight-ui: bold;
-    
+
     --line-height-extra-large: 62px;
     --line-height-large: 55px;
     --line-height-medium: 41px;
     --line-height-body: 28px;
-    
+
     --color-primary: #444444;
     --color-primary-dark: #000000;
     --color-primary-light: #666666;
@@ -32,7 +32,10 @@
 
     --radius: 12px;
     --radius-image: 20px;
+
 }
+
+$breakpoint-mobile: 599px;
 
 html,
 body {
@@ -42,23 +45,52 @@ body {
     color: var(--color-body);
 }
 
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
 h1 {
     font-size: var(--font-size-extra-large);
     font-weight: var(--font-weight-large);
     line-height: var(--line-height-extra-large);
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        font-size: 40px;
+        line-height: 46px;
+    }
 }
+
 h2 {
     font-size: var(--font-size-large);
     font-weight: var(--font-weight-large);
     line-height: var(--line-height-large);
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        font-size: 32px;
+        line-height: 36px;
+    }
 }
+
 h3 {
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-large);
     line-height: var(--line-height-medium);
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        font-size: 24px;
+        line-height: 28px;
+    }
 }
+
 h4 {
     font-size: var(--font-size-small);
     font-weight: var(--font-weight-large);
     line-height: var(--line-height-body);
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        font-size: 20px;
+        line-height: 23px;
+    }
 }
