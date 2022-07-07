@@ -6,7 +6,7 @@
         gap: 80px;
         margin: 0;
         padding: 0px;
-        
+
         &__image {
             width: 48px;
             height: 48px;
@@ -20,14 +20,5 @@
         &.--right {
             justify-content: flex-end;
         }
-    }
-    &.--small {
-        max-width: 580px;
-    }
-    &.--medium {
-        max-width: 900px;
-    }
-    &.--large {
-        max-width: 1200px;
     }
 }
