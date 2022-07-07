@@ -5,7 +5,7 @@ spec:
     - simple_blocks
   label: Line
   description: Line
-  icon:
+  icon: horizontal_rule
   tags: []
 
 # Defines the structure of this component, as well as the default values

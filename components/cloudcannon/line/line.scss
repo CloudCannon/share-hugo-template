@@ -4,14 +4,14 @@
     border-width: 0;
     background-color:#333333;
     width: 100%;
-    
+
     &.--small {
-        max-width: 580px;
+        max-width: 50%;
     }
     &.--medium {
-        max-width: 900px;
+        max-width: 75%;
     }
     &.--large {
-        max-width: 1200px;
+        max-width: 100%;
     }
 }
