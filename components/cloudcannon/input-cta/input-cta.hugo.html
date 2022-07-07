@@ -1,8 +1,8 @@
 <div class="c-input-cta --{{ lower .style.content_width }} --{{ lower .style.content_alignment }}">
-    {{ if .content.heading }}{{ partial "bookshop" (slice "cloudcannon/headline" .content.heading )}}{{ end }}
-    {{ if .content.paragraph }}{{ partial "bookshop" (slice "cloudcannon/paragraph" .content.paragraph )}}{{ end }}
+    {{ if .content.heading }}{{ partial "bookshop" (slice "cloudcannon/simple/headline" .content.heading )}}{{ end }}
+    {{ if .content.paragraph }}{{ partial "bookshop" (slice "cloudcannon/simple/paragraph" .content.paragraph )}}{{ end }}
     <form {{if .content.button.url }} action="{{.content.button.url}}" {{ end }}>
-        {{ partial "bookshop" (slice "cloudcannon/input" .content.input )}}
-        {{ partial "bookshop" (slice "cloudcannon/input" .content.button )}}
+        {{ partial "bookshop" (slice "cloudcannon/simple/input" .content.input )}}
+        {{ partial "bookshop" (slice "cloudcannon/simple/input" .content.button )}}
     </form>
 </div>

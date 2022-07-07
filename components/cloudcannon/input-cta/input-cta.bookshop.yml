@@ -11,9 +11,9 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   content:
-    heading: bookshop:cloudcannon/headline
-    paragraph: bookshop:cloudcannon/paragraph
-    input: bookshop:cloudcannon/input
+    heading: bookshop:cloudcannon/simple/headline
+    paragraph: bookshop:cloudcannon/simple/paragraph
+    input: bookshop:cloudcannon/simple/input
     button:
       default_value: Button
       name: button
