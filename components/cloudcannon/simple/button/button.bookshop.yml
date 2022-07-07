@@ -31,11 +31,13 @@ _inputs:
         - Primary
         - Secondary
   size:
-    type: select
+    type: choice
     options:
       values:
-        - Responsive
-        - Full
+        - name: Responsive
+          icon: width_normal
+        - name: Full
+          icon: rectangle
   disabled:
     type: checkbox
   open_in_new_tab:
