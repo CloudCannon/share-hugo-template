@@ -4,14 +4,13 @@ spec:
     - content_blocks
   label: Map
   description:
-  icon:
+  icon: map
   tags: []
 
 # Defines the structure of this component, as well as the default values
 blueprint:
   style:
     content_width: Large
-    content_alignment: Middle
   content:
     api_key: ""
     location: ""
