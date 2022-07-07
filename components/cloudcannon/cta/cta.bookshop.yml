@@ -45,3 +45,15 @@ _inputs:
           icon: width_wide
         - name: Large
           icon: rectangle
+  vertical_alignment:
+    type: choice
+    options:
+      text_key: false
+      value_key: name
+      values:
+        - icon: align_vertical_top
+          name: Top
+        - icon: align_vertical_center
+          name: Middle
+        - icon: align_vertical_bottom
+          name: Bottom

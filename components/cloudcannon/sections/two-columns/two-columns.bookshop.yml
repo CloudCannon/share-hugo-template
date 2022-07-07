@@ -42,6 +42,18 @@ _inputs:
       min: 5
       max: 200
       step: 1
+  vertical_alignment:
+    type: choice
+    options:
+      text_key: false
+      value_key: name
+      values:
+        - icon: align_vertical_top
+          name: Top
+        - icon: align_vertical_center
+          name: Middle
+        - icon: align_vertical_bottom
+          name: Bottom
   custom_background_color:
     type: switch
   background_color:
