@@ -42,12 +42,17 @@ preview:
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
   content_alignment:
-    type: select
+    type: choice
     options:
+      text_key: false
+      value_key: name
       values:
-        - Left
-        - Center
-        - Right
+        - icon: align_horizontal_left
+          name: Left
+        - icon: align_horizontal_center
+          name: Center
+        - icon: align_horizontal_right
+          name: Right
   logo:
     type: image
     comment: Logo should be an SVG with size 48x48px
