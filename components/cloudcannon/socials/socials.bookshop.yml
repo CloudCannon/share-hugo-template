@@ -49,6 +49,7 @@ _inputs:
         - Center
         - Right
   logo:
+    type: image
     comment: Logo should be an SVG with size 48x48px
   open_in_new_tab:
     type: checkbox
