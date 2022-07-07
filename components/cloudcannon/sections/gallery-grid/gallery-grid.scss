@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    max-width: 1200px;
+    width: 100%;
     @media screen and (max-width: 580px) {
         display: flex;
         flex-wrap: wrap;

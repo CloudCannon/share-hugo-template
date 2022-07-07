@@ -26,12 +26,15 @@ preview:
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
   content_width:
-    type: select
+    type: choice
     options:
       values:
-        - Small
-        - Medium
-        - Large
+        - name: Small
+          icon: width_normal
+        - name: Medium
+          icon: width_wide
+        - name: Large
+          icon: rectangle
   borders:
     type: switch
   border-color:

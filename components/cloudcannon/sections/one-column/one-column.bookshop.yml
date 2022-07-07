@@ -22,6 +22,16 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
+  content_width:
+    type: choice
+    options:
+      values:
+        - name: Small
+          icon: width_normal
+        - name: Medium
+          icon: width_wide
+        - name: Large
+          icon: rectangle
   custom_background_color:
     type: switch
   background_color:

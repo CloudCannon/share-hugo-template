@@ -11,7 +11,7 @@
                     {{ if eq .style.background_overlay.gradient_type "solid" }} class="gradient" style="background-color: {{ .style.background_overlay.color | safeCSS }};" {{ end }}
             ></div>
         {{ end }}
-        <div class="__content-wrapper  --{{ .style.content_alignment | lower }} --{{ .style.vertical_alignment | lower }}">
+    <div class="__content-wrapper  --{{ .style.content_alignment | lower }} --{{ .style.vertical_alignment | lower }}">
         <div class="__content --{{ .style.content_width | lower }}">
             {{ if .content.logo.path }}
                 <div class="__logo">
