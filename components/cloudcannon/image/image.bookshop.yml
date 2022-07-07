@@ -9,9 +9,6 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  style:
-    content_width: Large
-    content_alignment: Center
   content:
     path: ""
     alt: ""
@@ -25,16 +22,6 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  content_width:
-    type: choice
-    options:
-      values:
-        - name: Small
-          icon: width_normal
-        - name: Medium
-          icon: width_wide
-        - name: Large
-          icon: rectangle
   content_alignment:
     type: choice
     options:
