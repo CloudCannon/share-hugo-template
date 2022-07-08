@@ -10,12 +10,12 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  style:
-    content_alignment: Left
   content:
     quote: Quote text
     source: Quote source
     image:
+  style:
+    content_alignment: Left
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:

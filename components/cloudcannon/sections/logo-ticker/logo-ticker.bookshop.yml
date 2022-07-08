@@ -9,23 +9,23 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  style:
-    height: 45
   content:
     logos:
       - image:
         alt:
         link:
+  style:
+    height: 45
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
-  style:
-    height: 45
   content:
     logos:
       - image: http://placekitten.com/580/300
         alt: Logo alt
         link: '/'
+  style:
+    height: 45
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:

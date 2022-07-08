@@ -9,13 +9,13 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
+  content:
+    blocks: [bookshop:structure:content_blocks]
   style:
     custom_background_color: false
     background_color: '#f5f5f5'
     content_alignment: Center
     content_width: Large
-  content:
-    blocks: [bookshop:structure:content_blocks]
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:

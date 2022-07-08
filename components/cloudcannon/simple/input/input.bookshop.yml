@@ -8,14 +8,14 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  style:
-    input_type: text
-    is_required: true
   content:
     label: ""
     placeholder: ""
     default_value: ""
     name: ""
+  style:
+    input_type: text
+    is_required: true
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:

@@ -9,6 +9,13 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
+  content:
+    logo:
+      path:
+      alt:
+    blocks:
+      - bookshop:structure:simple_blocks!(cloudcannon/simple/headline)
+      - bookshop:structure:simple_blocks!(cloudcannon/simple/button)
   style:
     content_width: Large
     content_alignment: Left
@@ -20,13 +27,6 @@ blueprint:
     background_overlay:
       gradient_type: Linear
       color: rgba(0, 0, 0, 0.25)
-  content:
-    logo:
-      path:
-      alt:
-    blocks:
-      - bookshop:structure:simple_blocks!(cloudcannon/simple/headline)
-      - bookshop:structure:simple_blocks!(cloudcannon/simple/button)
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:

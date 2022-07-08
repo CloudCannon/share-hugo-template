@@ -9,8 +9,6 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  style:
-    gap: 40
   content:
     left_column:
       style:
@@ -30,6 +28,8 @@ blueprint:
       content:
         blocks:
           - bookshop:structure:content_blocks
+  style:
+    gap: 40
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
