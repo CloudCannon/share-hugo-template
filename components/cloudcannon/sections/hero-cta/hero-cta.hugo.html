@@ -8,7 +8,7 @@
             <div class="__gradient-overlay"
                     {{ if eq .style.background_overlay.gradient_type "Linear" }} class="gradient" style="background-image: linear-gradient(to right, {{ .style.background_overlay.color | safeCSS }}, rgba(0,0,0,0));" {{ end }}
                     {{ if eq .style.background_overlay.gradient_type "Radial" }} class="gradient" style="background-image: radial-gradient(circle at  left top, {{ .style.background_overlay.color | safeCSS }}, rgba(0,0,0,0));" {{ end }}
-                    {{ if eq .style.background_overlay.gradient_type "solid" }} class="gradient" style="background-color: {{ .style.background_overlay.color | safeCSS }};" {{ end }}
+                    {{ if eq .style.background_overlay.gradient_type "Solid" }} class="gradient" style="background-color: {{ .style.background_overlay.color | safeCSS }};" {{ end }}
             ></div>
         {{ end }}
     <div class="__content-wrapper  --{{ .style.content_alignment | lower }} --{{ .style.vertical_alignment | lower }}">
