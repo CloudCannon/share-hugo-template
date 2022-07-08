@@ -25,11 +25,13 @@ preview:
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
   content_width:
-    type: select
+    type: choice
     options:
       values:
-        - Full
-        - Half
+        - name: Full
+          icon: rectangle
+        - name: Half
+          icon: width_normal
   content_alignment:
     type: choice
     options:
