@@ -8,6 +8,13 @@
         text-align: left;
     }
 
+    &.--left {
+        .c-input {
+            align-items: flex-start;
+            text-align: left;
+        }
+    }
+
     &.--center {
         .c-input {
             align-items: center;

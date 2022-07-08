@@ -30,8 +30,13 @@ _inputs:
   input_type:
     type: select
     options:
+      text_key: label
       values:
-        - email
-        - textarea
-        - text
-        - submit
+        - value: email
+          label: Email
+        - value: textarea
+          label: Text Area
+        - value: text
+          label: Text
+        - value: submit
+          label: Submit button

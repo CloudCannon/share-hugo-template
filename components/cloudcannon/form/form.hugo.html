@@ -1,4 +1,4 @@
-<form class="c-form --{{ .style.content_width | lower }} --{{ .style.content_alignment | lower }}" {{if .button.url }} action="{{.style.button.url}}" {{ end }}>
+<form class="c-form --{{ .style.content_width | lower }} --{{ .style.content_alignment | lower }}" {{if .content.submit_url }} action="{{ .content.submit_url }}" {{ end }}>
     {{ range .content.inputs }}
         {{ partial "bookshop" (slice "cloudcannon/simple/input" . )}}
     {{ end }}
