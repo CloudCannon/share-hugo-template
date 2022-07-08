@@ -1,0 +1,34 @@
+.c-cta {
+    display: grid;
+    gap: 10px;
+
+    &.--left {
+        text-align: left;
+        justify-items: flex-start;
+        justify-self: flex-start;
+    }
+    &.--right {
+        text-align: right;
+        justify-items: flex-end;
+        justify-self: flex-end;
+    }
+    &.--center {
+        text-align: center;
+        justify-items: center;
+        justify-self: center;
+    }
+
+    &.--top {
+        align-self: flex-start;
+    }
+    &.--middle {
+        align-self: center;
+    }
+    &.--bottom {
+        align-self: flex-end;
+    }
+
+    .c-button {
+        margin-top: 30px;
+    }
+}

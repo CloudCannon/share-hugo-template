@@ -1,0 +1,51 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - sections
+  label: Hero image
+  description: Hero image that spans the page
+  icon: panorama
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  content:
+    path: ""
+    alt: ""
+  style:
+    content_width: Large
+    content_alignment: Center
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  content:
+    image:
+      path: http://placekitten.com/580/300
+      alt: Image alt
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  content_width:
+    type: choice
+    options:
+      values:
+        - name: Small
+          icon: width_normal
+        - name: Medium
+          icon: width_wide
+        - name: Large
+          icon: rectangle
+  content_alignment:
+    type: choice
+    options:
+      text_key: false
+      value_key: name
+      values:
+        - icon: align_horizontal_left
+          name: Left
+        - icon: align_horizontal_center
+          name: Center
+        - icon: align_horizontal_right
+          name: Right
+  path:
+    type: image

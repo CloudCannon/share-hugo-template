@@ -1,0 +1,79 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Form
+  description:
+  icon:
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  content:
+    submit_url: '/'
+    inputs: [bookshop:cloudcannon/simple/input]
+  style:
+    content_width: Full
+    content_alignment: Left
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  content:
+    inputs:
+      - _bookshop_name: cloudcannon/input
+        label: First Name
+        placeholder: Name
+        default_value:
+        name: ""
+        input_type: text
+        is_required: true
+        style: Primary
+      - _bookshop_name: cloudcannon/input
+        label: Email
+        placeholder: Email
+        default_value:
+        name: ""
+        input_type: text
+        is_required: true
+        style: Primary
+      - _bookshop_name: cloudcannon/input
+        label: Message
+        placeholder: Enter paragraph here
+        default_value: submit
+        name: ""
+        input_type: textarea
+        is_required: true
+        style: Primary
+      - _bookshop_name: cloudcannon/input
+        label: ""
+        placeholder: ""
+        default_value: submit
+        name: ""
+        input_type: submit
+        is_required: true
+        style: Primary
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  submit_url:
+    type: url
+  content_width:
+    type: choice
+    options:
+      values:
+        - name: Full
+          icon: rectangle
+        - name: Half
+          icon: width_normal
+  content_alignment:
+    type: choice
+    options:
+      text_key: false
+      value_key: name
+      values:
+        - icon: align_horizontal_left
+          name: Left
+        - icon: align_horizontal_center
+          name: Center
+        - icon: align_horizontal_right
+          name: Right

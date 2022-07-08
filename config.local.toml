@@ -1,0 +1,15 @@
+# This file is used to develop against a locally-cloned copy of https://github.com/cloudcannon/starter-components
+# To use: `npm run local-start`
+
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Hugo Starter"
+
+[module]
+replacements = "local/component-library -> ../../starter-components/components"
+
+[[module.imports]]
+path = 'local/component-library'
+
+[[module.imports]]
+path = 'github.com/cloudcannon/bookshop/hugo/v3'

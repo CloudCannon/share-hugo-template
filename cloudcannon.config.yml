@@ -1,0 +1,41 @@
+_enabled_editors:
+  - visual
+  - content
+
+data_config: true
+
+_inputs:
+  content_alignment:
+    type: choice
+    options:
+      text_key: false
+      value_key: name
+      values:
+        - icon: align_horizontal_left
+          name: Left
+        - icon: align_horizontal_center
+          name: Center
+        - icon: align_horizontal_right
+          name: Right
+  vertical_alignment:
+    type: choice
+    options:
+      text_key: false
+      value_key: name
+      values:
+        - icon: align_vertical_top
+          name: Top
+        - icon: align_vertical_center
+          name: Middle
+        - icon: align_vertical_bottom
+          name: Bottom
+  content_width:
+    type: choice
+    options:
+      values:
+        - name: Small
+          icon: width_normal
+        - name: Medium
+          icon: width_wide
+        - name: Large
+          icon: rectangle

@@ -1,0 +1,88 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - sections
+  label: "Hero CTA"
+  description: CTA with background image or color
+  icon:
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  content:
+    logo:
+      path:
+      alt:
+    blocks:
+      - bookshop:structure:simple_blocks!(cloudcannon/simple/headline)
+      - bookshop:structure:simple_blocks!(cloudcannon/simple/button)
+  style:
+    content_width: Large
+    content_alignment: Left
+    include_background_color: false
+    background_color: "#F0F0F0"
+    include_background_image: false
+    background_image_path:
+    include_background_overlay: false
+    background_overlay:
+      gradient_type: Linear
+      color: rgba(0, 0, 0, 0.25)
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  content:
+    include_background_image: true
+    background_image_path: http://placekitten.com/1500/800
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  content_width:
+    type: choice
+    options:
+      values:
+        - name: Small
+          icon: width_normal
+        - name: Medium
+          icon: width_wide
+        - name: Large
+          icon: rectangle
+  content_alignment:
+    type: choice
+    options:
+      text_key: false
+      value_key: name
+      values:
+        - icon: align_horizontal_left
+          name: Left
+        - icon: align_horizontal_center
+          name: Center
+        - icon: align_horizontal_right
+          name: Right
+  gradient_type:
+    type: select
+    options:
+      values:
+        - Linear
+        - Radial
+        - Solid
+  color:
+    type: color
+    options:
+      format: rgb
+      alpha: true
+  include_background_color:
+    type: switch
+  background_color:
+    type: color
+    hidden: "include_background_color"
+  include_background_image:
+    type: switch
+  background_image_path:
+    type: image
+    hidden: "include_background_image"
+  include_background_overlay:
+    type: switch
+  background_overlay:
+    hidden: "include_background_overlay"
+  curved_edges:
+    type: switch

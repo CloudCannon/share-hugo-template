@@ -1,0 +1,5 @@
+<section class="c-gallery-grid">
+    {{ range .content.images }}
+        {{ partial "bookshop" (slice "cloudcannon/image" . )}}
+    {{ end }}
+</section>

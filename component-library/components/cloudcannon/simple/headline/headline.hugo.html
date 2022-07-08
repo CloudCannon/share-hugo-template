@@ -1,0 +1,3 @@
+{{ printf `<%s class="c-headline %s">` .style.heading_level (printf `--%s` .style.text_color | lower) | safeHTML}}
+    {{ .content.text }}
+{{ printf `</%s>` .style.heading_level | safeHTML }}

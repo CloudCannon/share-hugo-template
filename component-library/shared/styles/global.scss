@@ -1,0 +1,90 @@
+// Files in shared/styles will be used as global stylesheets on your site,
+// as well as in the component browser and screenshots.
+
+:root {
+    --font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+    --font-size-extra-large: 60px;
+    --font-size-large: 48px;
+    --font-size-medium: 36px;
+    --font-size-small: 24px;
+    --font-size-body: 18px;
+    --font-size-ui: 16px;
+
+    --font-weight-large: 700;
+    --font-weight-body: 400;
+    --font-weight-ui: bold;
+
+    --line-height-extra-large: 69px;
+    --line-height-large: 55px;
+    --line-height-medium: 41px;
+    --line-height-small: 28px;
+    --line-height-body: 28px;
+
+    --color-primary: #444444;
+    --color-primary-dark: #000000;
+    --color-primary-light: #666666;
+
+    --color-secondary: #E9E9E9;
+    --color-secondary-dark: #CCCCCC;
+    --color-secondary-light: #EEEEEE;
+
+    --color-body: #393939;
+    --color-light: #FFFFFF;
+
+    --radius: 12px;
+    --radius-image: 20px;
+}
+
+$breakpoint-mobile: 599px;
+
+html {
+    @media screen and (max-width: $breakpoint-mobile) {
+        --font-size-extra-large: 40px;
+        --font-size-large: 32px;
+        --font-size-medium: 24px;
+        --font-size-small: 20px;
+
+        --line-height-extra-large: 46px;
+        --line-height-large: 36px;
+        --line-height-medium: 28px;
+        --line-height-small: 23px;
+    }
+}
+
+html,
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
+    color: var(--color-body);
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+h1 {
+    font-size: var(--font-size-extra-large);
+    font-weight: var(--font-weight-large);
+    line-height: var(--line-height-extra-large);
+}
+
+h2 {
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-large);
+    line-height: var(--line-height-large);
+}
+
+h3 {
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-large);
+    line-height: var(--line-height-medium);
+}
+
+h4 {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-large);
+    line-height: var(--line-height-body);
+}

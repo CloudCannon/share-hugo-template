@@ -1,0 +1,8 @@
+<section class="c-one-column --{{ .style.content_alignment | lower }}">
+    <div class="__content-wrapper --{{ .style.content_width | lower }}"
+    {{ if .style.custom_background_color }} style="background-color: {{ .style.background_color }};" {{ end }}>
+        {{ range .content.blocks }}
+            {{ partial "bookshop" . }}
+        {{ end }}
+    </div>
+</section>

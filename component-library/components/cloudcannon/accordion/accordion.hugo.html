@@ -1,0 +1,6 @@
+<div class="c-accordion --{{ .style.content_alignment | lower }} --{{ .style.content_width | lower }}">
+    <details class="c-accordion__dropdown">
+        <summary class="c-accordion__dropdown__summary">{{ .content.heading }}</summary>
+        {{ partial "bookshop" (slice "cloudcannon/simple/paragraph" .content.text )}}
+    </details>
+</div>

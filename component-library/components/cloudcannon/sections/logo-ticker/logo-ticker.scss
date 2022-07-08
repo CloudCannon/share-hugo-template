@@ -1,0 +1,16 @@
+.c-logo-ticker {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 40px;
+
+	@media screen and (max-width: 599px) {
+		flex-flow: column;
+		justify-content: flex-start;
+	}
+
+	img {
+		height: 100%;
+	}
+}

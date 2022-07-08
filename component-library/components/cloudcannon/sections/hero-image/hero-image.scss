@@ -1,0 +1,22 @@
+.c-hero-image {
+    display: flex;
+
+    &.--left {
+        justify-content: flex-start;
+        text-align: left;
+    }
+    &.--right {
+        justify-content: flex-end;
+        text-align: right;
+    }
+    &.--center {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .__content-wrapper {
+        img {
+            max-width: 100%;
+        }
+    }
+}

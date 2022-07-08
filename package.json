@@ -1,0 +1,24 @@
+{
+  "name": "hugo-starter",
+  "private": true,
+  "description": "A starter template for Hugo with Bookshop",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CloudCannon/hugo-starter.git"
+  },
+  "scripts": {
+    "start": "hugo mod clean && hugo server -D",
+    "local-start": "hugo mod clean && hugo server -D --config config.local.toml"
+  },
+  "author": "CloudCannon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CloudCannon/hugo-starter/issues"
+  },
+  "homepage": "https://github.com/CloudCannon/hugo-starter#readme",
+  "devDependencies": {
+    "@bookshop/browser": "3.2.1",
+    "@bookshop/generate": "3.2.1",
+    "@bookshop/hugo-engine": "3.2.1"
+  }
+}

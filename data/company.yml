@@ -1,0 +1,5 @@
+name: Company name
+logo: /uploads/logo.svg
+_inputs:
+  logo:
+    type: image

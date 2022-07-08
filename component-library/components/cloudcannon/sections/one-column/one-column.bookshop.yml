@@ -1,0 +1,51 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - sections
+  label: "One Column"
+  description:
+  icon: table_rows
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  content:
+    blocks: [bookshop:structure:content_blocks]
+  style:
+    custom_background_color: false
+    background_color: '#f5f5f5'
+    content_alignment: Center
+    content_width: Large
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  content_width:
+    type: choice
+    options:
+      values:
+        - name: Small
+          icon: width_normal
+        - name: Medium
+          icon: width_wide
+        - name: Large
+          icon: rectangle
+  content_alignment:
+    type: choice
+    options:
+      text_key: false
+      value_key: name
+      values:
+        - icon: align_horizontal_left
+          name: Left
+        - icon: align_horizontal_center
+          name: Center
+        - icon: align_horizontal_right
+          name: Right
+  custom_background_color:
+    type: switch
+  background_color:
+    type: color
+    hidden: "custom_background_color"

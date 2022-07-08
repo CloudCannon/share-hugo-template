@@ -1,0 +1,30 @@
+<section class="c-hero-cta"  style="
+    {{ if .style.include_background_color }} background-color: {{ .style.background_color }}; {{ end }}">
+
+        {{ if .style.include_background_image }}
+            <img src="{{ .style.background_image_path }}">
+        {{ end }}
+        {{ if .style.include_background_overlay }}
+            <div class="__gradient-overlay"
+                    {{ if eq .style.background_overlay.gradient_type "Linear" }} class="gradient" style="background-image: linear-gradient(to right, {{ .style.background_overlay.color | safeCSS }}, rgba(0,0,0,0));" {{ end }}
+                    {{ if eq .style.background_overlay.gradient_type "Radial" }} class="gradient" style="background-image: radial-gradient(circle at  left top, {{ .style.background_overlay.color | safeCSS }}, rgba(0,0,0,0));" {{ end }}
+                    {{ if eq .style.background_overlay.gradient_type "Solid" }} class="gradient" style="background-color: {{ .style.background_overlay.color | safeCSS }};" {{ end }}
+            ></div>
+        {{ end }}
+    <div class="__content-wrapper  --{{ .style.content_alignment | lower }} --{{ .style.vertical_alignment | lower }}">
+        <div class="__content --{{ .style.content_width | lower }}">
+            {{ if .content.logo.path }}
+                <div class="__logo">
+                    <img
+                        loading="lazy"
+                        src="{{ .content.logo.path }}"
+                        alt="{{ .content.logo.alt }}"
+                    />
+                </div>
+            {{ end }}
+            {{ range .content.blocks }}
+                {{ partial "bookshop" . }}
+            {{ end }}
+        </div>
+    </div>
+</section>

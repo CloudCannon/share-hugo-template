@@ -1,0 +1,15 @@
+.c-image {
+    &.--left {
+        text-align: left;
+    }
+    &.--right {
+        text-align: right;
+    }
+    &.--center {
+        text-align: center;
+    }
+    img {
+        border-radius: var(--radius-image);
+        width: 100%
+    }
+}

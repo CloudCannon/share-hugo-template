@@ -1,0 +1,63 @@
+.c-faq {
+    display: flex;
+	flex-flow: column;
+	gap: 20px;
+
+	.__content-wrapper {
+		width: 100%;
+		display: flex;
+ 		flex-flow: column;
+
+		.__content {
+			&.--with-borders {
+				> .__item-wrapper {
+					border-top: 2px solid #333333;
+
+					&:last-child {
+						border-bottom: 2px solid #333333;
+					}
+				}
+			}
+
+			&:not(.--with-borders) {
+				> .__item-wrapper {
+					border-radius: var(--radius);
+					margin-bottom: 20px;
+				}
+			}
+
+			&.--left {
+				text-align: left;
+				align-self: flex-start;
+			}
+
+			&.--center {
+				text-align: center;
+				align-self: center;
+			}
+
+			&.--right {
+				text-align: right;
+				align-self: flex-end;
+			}
+
+			@media screen and (min-width: 600px) {
+				&.--large {
+					width: 100%;
+				}
+
+				&.--medium {
+					width: 75%;
+				}
+
+				&.--small {
+					width: 50%;
+				}
+			}
+
+			h3 {
+				padding: 0 20px;
+			}
+		}
+	}
+}

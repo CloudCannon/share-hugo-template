@@ -1,0 +1,24 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Map
+  description:
+  icon: map
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  content:
+    api_key: ""
+    location: ""
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  api_key:
+    comment: "In order to use the map you need to have a google maps api key, find out more at https://developers.google.com/maps/documentation/javascript/get-api-key"
+  location:
+    comment: "The address for your marker"

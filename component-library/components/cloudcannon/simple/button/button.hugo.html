@@ -1,0 +1,3 @@
+<a class="c-button --{{ .style.type | lower }} --{{ .style.size | lower }} {{ if .style.disabled }} --disabled {{ end }}" {{ if .content.open_in_new_tab }} rel="noopener" target="_blank" {{ end }} href="{{ .content.url }}">
+    {{ .content.text }}
+</a>

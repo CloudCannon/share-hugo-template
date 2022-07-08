@@ -1,0 +1,46 @@
+navigation_links:
+  - page_name: Page
+    links:
+      - name: Subpage, section or anchor
+        url: /
+      - name: Subpage, section or anchor
+        url: /
+      - name: Subpage, section or anchor
+        url: /
+  - page_name: Page
+    links:
+      - name: Subpage, section or anchor
+        url: /
+      - name: Subpage, section or anchor
+        url: /
+      - name: Subpage, section or anchor
+        url: /
+      - name: Subpage, section or anchor
+        url: /
+      - name: Subpage, section or anchor
+        url: /
+  - page_name: Page
+    links:
+      - name: Subpage, section or anchor
+        url: /
+      - name: Subpage, section or anchor
+        url: /
+      - name: Subpage, section or anchor
+        url: /
+  - page_name: Page
+    links:
+      - name: Subpage, section or anchor
+        url: /
+      - name: Subpage, section or anchor
+        url: /
+      - name: Subpage, section or anchor
+        url: /
+      - name: Subpage, section or anchor
+        url: /
+terms_and_conditions_links:
+  - name: Privacy
+    url: /
+  - name: Terms
+    url: /
+  - name: Sitemap
+    url: /

@@ -1,0 +1,44 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+    - simple_blocks
+  label: Button
+  description:
+  icon:
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  content:
+    text: Button
+    url: /
+    open_in_new_tab: false
+  style:
+    type: Primary
+    size: Responsive
+    disabled: false
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  type:
+    type: select
+    options:
+      values:
+        - Primary
+        - Secondary
+  size:
+    type: choice
+    options:
+      values:
+        - name: Responsive
+          icon: width_normal
+        - name: Full
+          icon: rectangle
+  disabled:
+    type: checkbox
+  open_in_new_tab:
+    type: checkbox

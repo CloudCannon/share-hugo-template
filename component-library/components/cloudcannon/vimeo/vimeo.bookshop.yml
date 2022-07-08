@@ -1,0 +1,45 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Vimeo video
+  description:
+  icon:
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  content:
+    no_player_controls: true
+    video_id: ""
+    autoplay: false
+    loop: false
+    mute: false
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  content:
+    video_id: "622005181"
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  autoplay:
+    type: checkbox
+    comment: "Allows video to automatically start on page load. Please note: Video
+      will autoplay if player controls are removed."
+  loop:
+    type: checkbox
+    comment: "Allows video to loop playback. Please note: Will automatically loop if
+      player controls are removed."
+  mute:
+    type: checkbox
+    comment: "This parameter will automatically mute your video on load. Once your
+      video plays, viewers can manually un-mute by clicking on the volume bar
+      within the player. Please note: Will be muted if player controls are
+      removed."
+  no_player_controls:
+    type: checkbox
+    comment: "This parameter automatically disables all elements in the player (play
+      bar, buttons, etc), autoplays, loops, and mutes your video on load. Please
+      note: the background parameter is only supported for videos hosted by paid
+      members."

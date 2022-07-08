@@ -1,0 +1,9 @@
+[spec]
+label = "Block"
+icon = "apps"
+
+[[blueprint.cards]]
+text = "This is some text"
+
+[[blueprint.cards]]
+text = "This is some more text"

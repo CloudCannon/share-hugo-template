@@ -1,0 +1,47 @@
+.c-two-columns {
+    display: flex;
+    border-radius: var(--radius);
+    overflow: hidden;
+    width: 100%;
+    gap: 40px;
+
+    @media screen and (max-width: 599px) {
+        flex-flow: column;
+    }
+
+    >.column {
+        flex: 1;
+        display: flex;
+        gap: 20px;
+        padding: 40px;
+        flex-flow: column;
+        border-radius: var(--radius);
+
+        &.--top {
+            justify-content: flex-start;
+        }
+
+        &.--middle {
+            justify-content: center;
+        }
+
+        &.--bottom {
+            justify-content: flex-end;
+        }
+
+        &.--left {
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        &.--center {
+            align-items: center;
+            text-align: center;
+        }
+
+        &.--right {
+            align-items: flex-end;
+            text-align: right;
+        }
+    }
+}

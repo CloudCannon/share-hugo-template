@@ -1,0 +1,14 @@
+<section class="c-custom-section">
+    <div class="__content-wrapper"
+        style="
+        {{ if .include_background_color }} background-color: {{ .background_color }}; {{ end }}
+        {{ if .include_background_image }}
+            background-image: url({{ .background_image_path }});
+            background-size: cover;
+        {{ end }}"
+        >
+        {{ with .content_blocks }}
+            {{ partial "bookshop" . }}
+        {{ end }}
+    </div>
+</section>

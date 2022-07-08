@@ -1,0 +1,43 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+    - simple_blocks
+  label: Quote
+  description:
+  icon:
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  content:
+    quote: Quote text
+    source: Quote source
+    image:
+  style:
+    content_alignment: Left
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  content:
+    quote: >-
+      Orci varius natoque penatibus et magnis dis parturient montes,
+      nascetur ridiculus mus. Mauris sed tempus odio, vel malesuada enim.
+      Donec aliquet at lectus eget accumsan
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  quote:
+    type: textarea
+  content_alignment:
+    type: choice
+    options:
+      text_key: false
+      value_key: name
+      values:
+        - icon: align_horizontal_left
+          name: Left
+        - icon: align_horizontal_center
+          name: Center
+        - icon: align_horizontal_right
+          name: Right

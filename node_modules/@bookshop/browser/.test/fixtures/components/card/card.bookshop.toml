@@ -1,0 +1,6 @@
+[spec]
+label = "Card"
+icon = "nature_people"
+
+[blueprint]
+text = "This is some text"

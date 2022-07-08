@@ -1,0 +1,4 @@
+<div class="c-paragraph">
+    {{/* A workaround forcing Hugo markdownfiy to output short string with outer p tags */}}
+    {{ .content.text | printf "%s\n# strip" | markdownify | replaceRE "\n*<h1>strip</h1>\n*$" "" | replaceRE `\n*<h1 id="strip">strip</h1>\n*$` "" | safeHTML }}
+</div>

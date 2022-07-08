@@ -1,0 +1,5 @@
+<div class="c-cta --{{ .style.content_alignment | lower }} --{{ .style.content_width | lower }} --{{ .style.vertical_alignment | lower }}">
+    {{ range .content.blocks }}
+        {{ partial "bookshop" . }}
+    {{ end }}
+</div>

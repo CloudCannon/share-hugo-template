@@ -1,0 +1,14 @@
+<div class="c-input --{{ .style.input_type }}">
+    {{ if ne .style.input_type "submit" }}
+        {{ if .content.label }}
+            <label for="{{ .content.name }}">{{ .content.label }}{{ if .style.is_required }}*{{ end }}</label>
+        {{ end }}
+        {{ if eq .style.input_type "textarea" }}
+            <textarea id="{{ .content.name }}" name="{{ .content.name }}" rows="6" placeholder="{{ .content.placeholder }}" value="{{ .content.default_value }}" {{ if .style.is_required }} required {{ end }}></textarea>
+        {{ else }}
+            <input id="{{ .content.name }}" class="text" name="{{ .content.name }}" type="{{ .style.input_type }}" placeholder="{{ .content.placeholder }}" value="{{ .content.default_value }}" {{ if .style.is_required }} required {{ end }}/>
+        {{ end }}
+    {{ else if eq .style.input_type "submit" }}
+        <input class="c-button --{{ .style.input_type | lower }}" type="submit" value="{{ .content.label }}"/>
+    {{ end }}
+</div>

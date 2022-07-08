@@ -1,0 +1,20 @@
+<div class="c-socials">
+    <ul class="c-socials__list --{{ .style.content_alignment | lower }}">
+        {{ range .content.logo_links }}
+            <li>
+            <a
+                href="{{ .url }}"
+                {{ if .open_in_new_tab }}
+                    rel="noopener"
+                    target="_blank"
+                {{ end }}
+            ><img
+                loading="lazy"
+                class="c-socials__list__image"
+                src="{{ .logo }}"
+                alt="{{ .alt }}"
+            /></a>
+            </li>
+        {{ end }}
+    </ul>
+</div>
