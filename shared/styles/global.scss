@@ -3,7 +3,7 @@
 
 :root {
     --font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-    --font-size-extra-large: 54px;
+    --font-size-extra-large: 60px;
     --font-size-large: 48px;
     --font-size-medium: 36px;
     --font-size-small: 24px;
@@ -14,9 +14,10 @@
     --font-weight-body: 400;
     --font-weight-ui: bold;
 
-    --line-height-extra-large: 62px;
+    --line-height-extra-large: 69px;
     --line-height-large: 55px;
     --line-height-medium: 41px;
+    --line-height-small: 28px;
     --line-height-body: 28px;
 
     --color-primary: #444444;
@@ -32,10 +33,23 @@
 
     --radius: 12px;
     --radius-image: 20px;
-
 }
 
 $breakpoint-mobile: 599px;
+
+html {
+    @media screen and (max-width: $breakpoint-mobile) {
+        --font-size-extra-large: 40px;
+        --font-size-large: 32px;
+        --font-size-medium: 24px;
+        --font-size-small: 20px;
+
+        --line-height-extra-large: 46px;
+        --line-height-large: 36px;
+        --line-height-medium: 28px;
+        --line-height-small: 23px;
+    }
+}
 
 html,
 body {
@@ -55,42 +69,22 @@ h1 {
     font-size: var(--font-size-extra-large);
     font-weight: var(--font-weight-large);
     line-height: var(--line-height-extra-large);
-
-    @media screen and (max-width: $breakpoint-mobile) {
-        font-size: 40px;
-        line-height: 46px;
-    }
 }
 
 h2 {
     font-size: var(--font-size-large);
     font-weight: var(--font-weight-large);
     line-height: var(--line-height-large);
-
-    @media screen and (max-width: $breakpoint-mobile) {
-        font-size: 32px;
-        line-height: 36px;
-    }
 }
 
 h3 {
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-large);
     line-height: var(--line-height-medium);
-
-    @media screen and (max-width: $breakpoint-mobile) {
-        font-size: 24px;
-        line-height: 28px;
-    }
 }
 
 h4 {
     font-size: var(--font-size-small);
     font-weight: var(--font-weight-large);
     line-height: var(--line-height-body);
-
-    @media screen and (max-width: $breakpoint-mobile) {
-        font-size: 20px;
-        line-height: 23px;
-    }
 }
