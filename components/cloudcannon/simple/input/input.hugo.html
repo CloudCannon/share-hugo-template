@@ -9,6 +9,6 @@
             <input id="{{ .content.name }}" class="text" name="{{ .content.name }}" type="{{ .style.input_type }}" placeholder="{{ .content.placeholder }}" value="{{ .content.default_value }}" {{ if .style.is_required }} required {{ end }}/>
         {{ end }}
     {{ else if eq .style.input_type "submit" }}
-        <input class="c-button --{{ .style | lower }}" type="submit" value="{{ .content.default_value }}"/>
+        <input class="c-button --{{ .style.input_type | lower }}" type="submit" value="{{ .content.label }}"/>
     {{ end }}
 </div>

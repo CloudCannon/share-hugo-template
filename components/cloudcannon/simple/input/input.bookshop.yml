@@ -32,11 +32,7 @@ _inputs:
     options:
       text_key: label
       values:
-        - value: email
-          label: Email
-        - value: textarea
-          label: Text Area
-        - value: text
-          label: Text
-        - value: submit
-          label: Submit button
+        - email: Email
+        - textarea: Text area
+        - text: Text
+        - submit: Submit button
