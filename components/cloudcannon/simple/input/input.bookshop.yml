@@ -31,7 +31,7 @@ _inputs:
     type: select
     options:
       values:
-        - email: Email
-        - textarea: Text area
-        - text: Text
-        - submit: Submit button
+        - email
+        - textarea
+        - text
+        - submit
