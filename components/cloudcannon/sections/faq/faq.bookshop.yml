@@ -55,4 +55,5 @@ _inputs:
     type: switch
   background_color:
     hidden: "custom_background_color"
+    comment: "This will overwrite the background color on all child accordions"
 
