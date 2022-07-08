@@ -1,13 +1,4 @@
 .c-hero-image {
-    &.--small {
-        max-width: 580px;
-    }
-    &.--medium {
-        max-width: 900px;
-    }
-    &.--large {
-        max-width: 1200px;
-    }
     &.--left {
         text-align: left;
     }
@@ -18,7 +9,9 @@
         text-align: center;
     }
 
-    img {
-        max-width: 100%;
+    .__content-wrapper {
+        img {
+            max-width: 100%;
+        }
     }
 }

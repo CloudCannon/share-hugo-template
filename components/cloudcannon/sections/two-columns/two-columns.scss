@@ -4,7 +4,6 @@
     overflow: hidden;
     width: 100%;
     gap: 40px;
-    max-width: 1200px;
 
     @media screen and (max-width: 599px) {
         flex-flow: column;

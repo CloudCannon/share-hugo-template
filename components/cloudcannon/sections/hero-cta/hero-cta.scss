@@ -1,5 +1,4 @@
 .c-hero-cta {
-    max-width: 1200px;
     display: flex;
     position: relative;
     min-height: 380px;
@@ -83,17 +82,6 @@
             width: 100%;
             box-sizing: border-box;
             gap: 40px;
-
-
-            &.--small {
-                max-width: 580px;
-            }
-            &.--medium {
-                max-width: 900px;
-            }
-            &.--large {
-                max-width: 1200px;
-            }
         }
     }
 }

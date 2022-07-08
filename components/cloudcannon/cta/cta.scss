@@ -1,16 +1,7 @@
 .c-cta {
     display: grid;
     gap: 10px;
-    
-    &.--small {
-        max-width: 580px;
-    }
-    &.--medium {
-        max-width: 900px;
-    }
-    &.--large {
-        max-width: 1200px;
-    }
+
     &.--left {
         text-align: left;
         justify-items: flex-start;
@@ -36,7 +27,7 @@
     &.--bottom {
         align-self: flex-end;
     }
-    
+
     .c-button {
         margin-top: 30px;
     }

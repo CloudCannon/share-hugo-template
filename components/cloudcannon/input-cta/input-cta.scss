@@ -19,25 +19,13 @@
         margin-top: 0;
     }
 
-    &.--small {
-        max-width: 580px;
-    }
-
-    &.--medium {
-        max-width: 900px;
-    }
-
-    &.--large {
-        max-width: 1200px;
-    }
-
     &.--center {
         .c-headline, form, .c-paragraph {
             justify-content: center;
             text-align: center;
         }
     }
-    
+
     &.--right {
         .c-headline, form, .c-paragraph {
             justify-content: flex-end;

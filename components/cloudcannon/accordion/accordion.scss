@@ -1,13 +1,6 @@
 .c-accordion {
     box-sizing: border-box;
 
-    &.--half {
-        max-width: 580px;
-    }
-    &.--full {
-        max-width: 1200px;
-    }
-
     &__dropdown {
         &[open] > &__summary {
             &::after {
