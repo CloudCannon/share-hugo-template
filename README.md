@@ -12,7 +12,8 @@ Start with `npm start`. To use a local copy of the starter components, clone htt
 
 ## Features
 * Pre-built single page brochure site
-* Pre-styled components
+* Multiple configurable sections to creatively showcase your product
+* Pre-styled configurable components
 * Optimised for live visual editing in [CloudCannon](https://cloudcannon.com/)
 
 ## Develop
@@ -40,6 +41,6 @@ If this is not the case (for example, you are using a fork), you can run `npm ru
 You can add your own Bookshop components to this site.
 
 ## Editing
-Share is already optimised for adding, updating and removing components in [CloudCannon](https://app.cloudcannon.com/).
+Share is already optimised for adding, updating and removing sections and components in [CloudCannon](https://app.cloudcannon.com/).
 
 You can use the CloudCannon Visual Editor to edit this site. CloudCannon will also serve a free live preview that can be accessed via the internet.
