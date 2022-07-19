@@ -1,21 +1,22 @@
 {
-  "name": "hugo-starter",
+  "name": "share-hugo-template",
   "private": true,
-  "description": "A starter template for Hugo with Bookshop",
+  "description": "A one-page SaaS brochure template for Hugo with Bookshop",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CloudCannon/hugo-starter.git"
+    "url": "git+https://github.com/CloudCannon/share-hugo-template.git"
   },
   "scripts": {
     "start": "hugo mod clean && hugo server -D",
-    "local-start": "hugo mod clean && hugo server -D --config config.local.toml"
+    "local-start": "hugo mod clean && hugo server -D --config config.local.toml",
+    "update-components": "./update-components.sh"
   },
   "author": "CloudCannon",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/CloudCannon/hugo-starter/issues"
+    "url": "https://github.com/CloudCannon/share-hugo-template/issues"
   },
-  "homepage": "https://github.com/CloudCannon/hugo-starter#readme",
+  "homepage": "https://github.com/CloudCannon/share-hugo-template#readme",
   "devDependencies": {
     "@bookshop/browser": "3.2.1",
     "@bookshop/generate": "3.2.1",
