@@ -1,0 +1,42 @@
+.c-one-column {
+    display: flex;
+    width: 100%;
+
+    &.--left {
+        justify-content: flex-start;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    &.--center {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    &.--right {
+        justify-content: flex-end;
+        text-align: right;
+        align-items: flex-end;
+    }
+
+    .__content-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-radius: var(--radius);
+
+        &.--small {
+            max-width: 50%;
+        }
+
+        &.--medium {
+            max-width: 75%;
+        }
+
+        &.--large {
+            max-width: 100%;
+        }
+
+    }
+}

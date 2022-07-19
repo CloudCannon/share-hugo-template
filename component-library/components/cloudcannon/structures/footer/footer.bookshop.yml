@@ -1,0 +1,75 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - structure
+  label: Footer
+  description: Site footer
+  icon:
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  content:
+    navigation_links:
+      - page_name:
+        links:
+          - name:
+            url:
+    company_name:
+    terms_and_conditions_links:
+      - name:
+        url:
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  content:
+    navigation_links:
+      - page_name: Page
+        links:
+          - name: Subpage, section or anchor
+            url: /
+          - name: Subpage, section or anchor
+            url: /
+          - name: Subpage, section or anchor
+            url: /
+      - page_name: Page
+        links:
+          - name: Subpage, section or anchor
+            url: /
+          - name: Subpage, section or anchor
+            url: /
+          - name: Subpage, section or anchor
+            url: /
+          - name: Subpage, section or anchor
+            url: /
+          - name: Subpage, section or anchor
+            url: /
+      - page_name: Page
+        links:
+          - name: Subpage, section or anchor
+            url: /
+          - name: Subpage, section or anchor
+            url: /
+          - name: Subpage, section or anchor
+            url: /
+      - page_name: Page
+        links:
+          - name: Subpage, section or anchor
+            url: /
+          - name: Subpage, section or anchor
+            url: /
+          - name: Subpage, section or anchor
+            url: /
+          - name: Subpage, section or anchor
+            url: /
+    company_name: Company name
+    terms_and_conditions_links:
+      - name: Privacy
+        url: /
+      - name: Terms
+        url: /
+      - name: Sitemap
+        url: /
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:

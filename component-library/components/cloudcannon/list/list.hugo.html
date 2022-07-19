@@ -1,0 +1,5 @@
+<ul class="c-list">
+    {{ range .content.list_items }}
+        <li>{{ partial "bookshop" (slice "cloudcannon/paragraph" . )}}</li>
+    {{ end }}
+</ul>

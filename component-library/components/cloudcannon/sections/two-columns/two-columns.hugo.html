@@ -1,0 +1,19 @@
+<section class="c-two-columns" style="column-gap: {{ .style.gap }}px;">
+    {{ with .content.left_column }}
+        <div class="column --{{ .style.content_alignment | lower }} --{{ .style.vertical_alignment | lower }}"
+        {{ if .style.custom_background_color }} style="background-color: {{ .style.background_color }};" {{ end }}>
+            {{ range .content.blocks }}
+                {{ partial "bookshop" . }}
+            {{ end }}
+        </div>
+    {{ end }}
+
+    {{ with .content.right_column }}
+        <div class="column --{{ .style.content_alignment | lower }} --{{ .style.vertical_alignment | lower }}"
+        {{ if .style.custom_background_color }} style="background-color: {{ .style.background_color }};" {{ end }}>
+            {{ range .content.blocks }}
+                {{ partial "bookshop" . }}
+            {{ end }}
+        </div>
+    {{ end }}
+</section>

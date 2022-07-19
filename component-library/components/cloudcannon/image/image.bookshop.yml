@@ -1,0 +1,32 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Image
+  description: Single image
+  icon: image
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  content:
+    path: ""
+    alt: ""
+  style:
+    shadow: false
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  content:
+    image:
+      path: http://placekitten.com/580/300
+      alt: Image alt
+    style:
+      shadow: true
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  shadow:
+    type: switch
+  path:
+    type: image

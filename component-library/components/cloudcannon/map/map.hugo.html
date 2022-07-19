@@ -1,0 +1,6 @@
+{{ $address := (replace .content.location " " "+")}}
+{{ $map_url := printf "https://www.google.com/maps/embed/v1/place?key=%s&q=%s" .content.api_key $address }}
+
+<div class="c-map">
+    {{ partial "bookshop" (slice "cloudcannon/embed" (dict "url" $map_url ))}}
+</div>

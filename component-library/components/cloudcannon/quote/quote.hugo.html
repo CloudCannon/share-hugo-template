@@ -1,0 +1,15 @@
+<figure class="c-quote --{{ .style.content_alignment | lower }}">
+    <blockquote>
+        <p>“{{ .content.quote }}”</p>
+    </blockquote>
+    <figcaption>{{.content.source}}</figcaption>
+
+    {{ if .content.image }}
+        <div class="__image-wrapper">
+            <img
+            loading="lazy"
+            src="{{ .content.image }}"
+            />
+        </div>
+    {{ end }}
+</figure>

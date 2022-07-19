@@ -1,0 +1,35 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - structure
+  label: Nav
+  description: Site navigation
+  icon:
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  content:
+    logo: ""
+    links:
+      - name: ""
+        url: ""
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  content:
+    logo: "http://placekitten.com/90/40"
+    links:
+      - name: Features
+        url: /
+      - name: Blog
+        url: /
+      - name: Documentation
+        url: /
+      - name: Contact
+        url: /
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  logo:
+    type: image

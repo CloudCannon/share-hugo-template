@@ -1,0 +1,12 @@
+.c-image {
+    width: 100%;
+
+    img {
+        &.--with-shadow {
+            filter: drop-shadow(0px 0px 48px rgba(0, 0, 0, 0.1));
+        }
+
+        border-radius: var(--radius-image);
+        width: 100%
+    }
+}

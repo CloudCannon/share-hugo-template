@@ -1,0 +1,23 @@
+<footer class="c-footer">
+    <nav class="__navigation">
+        {{ range .content.navigation_links }}
+            <div class="__column">
+                <p>{{ .page_name }}</p>
+                <ul class="__link-list">
+                    {{ range .links }}
+                        <li><a href="{{ .url }}">{{ .name }}</a></li>
+                    {{ end }}
+                </ul>
+            </div>
+        {{ end }}
+    </nav>
+    {{ partial "bookshop" (slice "cloudcannon/sections/spacer" (dict "height" 120) )}}
+    <div class="__terms-and-conditions">
+        <ul class="__link-list">
+            <li>&copy 2022 {{ .content.company_name }}</li>
+            {{ range .content.terms_and_conditions_links }}
+                <li><a href="{{ .url }}">{{ .name }}</a></li>
+            {{ end }}
+        </ul>
+    </div>
+</footer>

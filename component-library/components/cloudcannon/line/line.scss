@@ -1,0 +1,17 @@
+.c-line {
+    margin: 0;
+    height: 2px;
+    border-width: 0;
+    background-color:#333333;
+    width: 100%;
+
+    &.--small {
+        max-width: 50%;
+    }
+    &.--medium {
+        max-width: 75%;
+    }
+    &.--large {
+        max-width: 100%;
+    }
+}

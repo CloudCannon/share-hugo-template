@@ -1,0 +1,42 @@
+.c-accordion {
+    box-sizing: border-box;
+
+    &__dropdown {
+        &[open] > &__summary {
+            &::after {
+                content: "-";
+            }
+        }
+
+        &__summary {
+            font-weight: var(--font-weight-large);
+            font-size: var(--font-size-small);
+            line-height: 32px;
+            padding: 40px;
+            cursor: pointer;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding-right: 80px;
+
+            &::after {
+                content: "+";
+                position: absolute;
+                right: 40px;
+                top: 40px;
+            }
+
+            &::marker, /* Latest Chrome, Edge, Firefox */
+            &::-webkit-details-marker /* Safari */ {
+                display: none;
+            }
+        }
+
+        p {
+            text-align: left;
+            margin: 0;
+            padding: 0 40px 40px 40px;
+        }
+    }
+}

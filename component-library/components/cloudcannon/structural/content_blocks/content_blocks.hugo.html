@@ -1,0 +1,6 @@
+<div class="c-content_blocks --{{ .style.flow | lower }} --{{ .style.vertical_alignment | lower }}"
+    {{ if .style.custom_background_color }} style="background-color: {{ .style.background_color }};" {{ end }}>
+    {{ range .content.blocks }}
+        {{ partial "bookshop" . }}
+    {{ end }}
+</div>

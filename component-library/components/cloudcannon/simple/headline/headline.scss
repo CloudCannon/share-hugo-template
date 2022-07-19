@@ -1,0 +1,11 @@
+.c-headline {
+    margin: 0;
+    color: var(--color-body);
+
+    &.--primary {
+        color: var(--color-primary);
+    }
+    &.--secondary {
+        color: var(--color-secondary);
+    }
+}

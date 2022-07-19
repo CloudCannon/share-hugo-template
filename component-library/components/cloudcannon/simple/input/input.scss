@@ -1,0 +1,47 @@
+.c-input {
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-body);
+    line-height: var(--line-height-body);
+    color: var(--color-body);
+    &.--email, &.--textarea, &.--text  {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        padding-bottom: 10px;
+    }
+
+    .text {
+        height: 64px;
+    }
+
+    textarea {
+        height: 240px;
+        font-family: var(--font-family);
+    }
+
+    .text, textarea {
+        padding: 20px;
+        border: 2px solid #333333;
+        border-radius: var(--radius);
+        font-size: var(--font-size-body);
+        font-weight: var(--font-weight-body);
+        line-height: var(--line-height-body);
+        color: #757575;
+        &:hover {
+            border: 2px solid var(--color-primary-light);
+            cursor: pointer;
+        }
+    }
+
+    label, .text, textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .c-button {
+        border: none;
+        cursor: pointer;
+    }
+}

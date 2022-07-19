@@ -1,0 +1,37 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+  label: Input
+  description: Input for a form element
+  icon:
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  content:
+    label: ""
+    placeholder: ""
+    default_value: ""
+    name: ""
+  style:
+    input_type: text
+    is_required: true
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  content:
+    placeholder: Email Address
+    name: email
+  style:
+    input_type: email
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  input_type:
+    type: select
+    options:
+      values:
+        - email
+        - textarea
+        - text
+        - submit

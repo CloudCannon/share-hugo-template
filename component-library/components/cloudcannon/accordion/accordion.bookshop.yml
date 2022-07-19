@@ -1,0 +1,45 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+  label: Accordion
+  description:
+  icon:
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  content:
+    heading:
+    text: bookshop:cloudcannon/simple/paragraph
+  style:
+    content_width: Full
+    content_alignment: Center
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  content:
+    heading: BookShop Starter Library
+    text: bookshop:cloudcannon/simple/paragraph!
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  content_width:
+    type: choice
+    options:
+      values:
+        - name: Full
+          icon: rectangle
+        - name: Half
+          icon: width_normal
+  content_alignment:
+    type: choice
+    options:
+      text_key: false
+      value_key: name
+      values:
+        - icon: align_horizontal_left
+          name: Left
+        - icon: align_horizontal_center
+          name: Center
+        - icon: align_horizontal_right
+          name: Right

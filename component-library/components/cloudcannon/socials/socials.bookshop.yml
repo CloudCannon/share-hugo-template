@@ -1,0 +1,59 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Socials
+  description: Icons with links for social media
+  icon:
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  content:
+    logo_links:
+      - url: ""
+        logo: ""
+        alt: ""
+        open_in_new_tab: true
+  style:
+    content_alignment: Left
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  content:
+    logo_links:
+      - url: http://facebook.com
+        logo: http://placekitten.com/48/48
+        alt: Facebook website
+      - url: http://twitter.com
+        logo: http://placekitten.com/48/48
+        alt: Twitter website
+      - url: http://instagram.com
+        logo: http://placekitten.com/48/48
+        alt: Instagram website
+      - url: http://linkedin.com
+        logo: http://placekitten.com/48/48
+        alt: LinkedIn website
+      - url: http://youtube.com
+        logo: http://placekitten.com/48/48
+        alt: Youtube website
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  content_alignment:
+    type: choice
+    options:
+      text_key: false
+      value_key: name
+      values:
+        - icon: align_horizontal_left
+          name: Left
+        - icon: align_horizontal_center
+          name: Center
+        - icon: align_horizontal_right
+          name: Right
+  logo:
+    type: image
+    comment: Logo should be an SVG with size 48x48px
+  open_in_new_tab:
+    type: checkbox

@@ -1,0 +1,24 @@
+.c-socials {
+    &__list {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 80px;
+        margin: 0;
+        padding: 0px;
+
+        &__image {
+            width: 48px;
+            height: 48px;
+        }
+        &.--left {
+            justify-content: flex-start;
+        }
+        &.--center {
+            justify-content: center;
+        }
+        &.--right {
+            justify-content: flex-end;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{{ $options := newScratch }} {{ if or (.content.mute) (.content.no_player_controls) }} {{ $options.Set "mute" 1 }} {{else}} {{ $options.Set "mute" 0 }} {{ end }}
+{{ if .content.no_player_controls }} {{ $options.Set "background" 1 }} {{else}} {{ $options.Set "background" 0 }} {{ end }}
+{{ if or (.content.loop) (.content.no_player_controls) }} {{ $options.Set "loop" 1 }} {{else}} {{ $options.Set "loop" 0 }} {{ end }}
+{{ if .content.autoplay }} {{ $options.Set "autopause" 0 }} {{else}} {{ $options.Set "autopause" 1 }} {{ end }}
+{{ if or (.content.autoplay) (.content.no_player_controls) }} {{ $options.Set "autoplay" 1 }} {{else}} {{ $options.Set "autoplay" 0 }} {{ end }}
+
+{{ $vimeo_url := printf "https://player.vimeo.com/video/%s?muted=%d&background=%d&loop=%d&autopause=%d&autoplay=%d" .content.video_id ($options.Get "mute") ($options.Get "background") ($options.Get "loop") ($options.Get "autopause") ($options.Get "autoplay") }}
+
+<div class="c-vimeo --{{ .style.content_width | lower }}">
+    {{ if .content.video_id }}
+        {{ partial "bookshop" (slice "cloudcannon/embed" (dict "url" $vimeo_url ))}}
+    {{ end }}
+</div>
