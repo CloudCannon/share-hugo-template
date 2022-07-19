@@ -1,1 +1,0 @@
-{{ if .content.content }}<a class="c-link" href="{{ .content.url }}" {{ if .content.open_in_new_tab }} rel="noopener" target="_blank" {{ end }}>{{ partial "bookshop" (slice "cloudcannon/paragraph" .content.content )}}</a>{{ end }}
