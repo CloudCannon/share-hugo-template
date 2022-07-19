@@ -26,7 +26,7 @@ sections:
             url: /
             open_in_new_tab: false
     style:
-      content_width: Large
+      content_width: Medium
       content_alignment: Center
       vertical_alignment: Middle
       include_background_color: false
