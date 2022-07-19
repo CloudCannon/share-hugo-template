@@ -3,6 +3,7 @@ _site
 vendor
 _vendor
 public
+resources
 node_modules
 bookshop-live.js
 bookshop-hosted.js
