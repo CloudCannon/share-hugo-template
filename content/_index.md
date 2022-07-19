@@ -87,6 +87,8 @@ sections:
               content:
                 path: /uploads/owings.png
                 alt:
+              style:
+                shadow: true
         style:
           content_alignment: Left
           vertical_alignment: Top
@@ -110,6 +112,8 @@ sections:
               content:
                 path: /uploads/payment.png
                 alt:
+              style:
+                shadow: true
         style:
           content_alignment: Left
           vertical_alignment: Top
@@ -150,6 +154,8 @@ sections:
             content:
               path: /uploads/confirm.png
               alt: Screenshot of payment success screen in Share app
+            style:
+              shadow: true
       style:
         flow: Horizontal
         vertical_alignment: Middle
@@ -250,6 +256,8 @@ sections:
               content:
                 path: /uploads/share-in-action.png
                 alt: Screenshot of the Share app overview page
+              style:
+                shadow: false
         style:
           content_alignment: Left
           vertical_alignment: Top
