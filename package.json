@@ -9,7 +9,7 @@
   "scripts": {
     "start": "hugo mod clean && hugo server -D",
     "local-start": "hugo mod clean && hugo server -D --config config.local.toml",
-    "update-components": "./update-components.sh"
+    "update-components": "./update_components.sh"
   },
   "author": "CloudCannon",
   "license": "MIT",
