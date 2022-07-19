@@ -1,5 +1,5 @@
-<div class="c-image --{{ .style.content_alignment | lower }} --{{ .style.content_width | lower }}">
-    <img
+<div class="c-image">
+    <img class="{{ if .style.shadow }} --with-shadow{{ end }}"
         loading="lazy"
         src="{{ .content.path }}"
         alt="{{ .content.alt }}"

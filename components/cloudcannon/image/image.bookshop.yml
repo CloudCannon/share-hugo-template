@@ -12,6 +12,8 @@ blueprint:
   content:
     path: ""
     alt: ""
+  style:
+    shadow: false
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -19,20 +21,12 @@ preview:
     image:
       path: http://placekitten.com/580/300
       alt: Image alt
+    style:
+      shadow: true
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  content_alignment:
-    type: choice
-    options:
-      text_key: false
-      value_key: name
-      values:
-        - icon: align_horizontal_left
-          name: Left
-        - icon: align_horizontal_center
-          name: Center
-        - icon: align_horizontal_right
-          name: Right
+  shadow:
+    type: switch
   path:
     type: image
