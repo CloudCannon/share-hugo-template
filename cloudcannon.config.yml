@@ -41,6 +41,7 @@ _inputs:
           icon: rectangle
 
 collections_config:
+  pages:
     schemas: 
       default:
         path: schemas/pages.md
