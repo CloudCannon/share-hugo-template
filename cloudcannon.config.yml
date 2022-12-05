@@ -39,3 +39,9 @@ _inputs:
           icon: width_wide
         - name: Large
           icon: rectangle
+
+collections_config:
+  pages:
+    schemas: 
+      default:
+        path: schemas/pages.md
