@@ -1,12 +1,6 @@
 ---
+_schema: default
 title: Home
-seo:
-  page_description:
-  canonical_url: 
-  featured_image: 
-  author_twitter_handle: 
-  open_graph_type:
-  no_index: false
 sections:
   - _bookshop_name: cloudcannon/structural/spacer
     style:
@@ -18,24 +12,23 @@ sections:
         alt: Share logo
       blocks:
         - _bookshop_name: cloudcannon/simple/headline
+          content:
+            text: Forget about the bill and live in the moment.
           style:
             heading_level: h1
             text_color: Primary
-          content:
-            text: Forget about the bill and live in the moment.
         - _bookshop_name: cloudcannon/simple/button
-          style:
-            type: Primary
-            size: Responsive
-            disabled: false
           content:
             text: Download the app
             url: /
             open_in_new_tab: false
+          style:
+            type: Primary
+            size: Responsive
+            disabled: false
     style:
       content_width: Medium
       content_alignment: Center
-      vertical_alignment: Middle
       include_background_color: false
       background_color: '#F0F0F0'
       include_background_image: false
@@ -44,6 +37,7 @@ sections:
       background_overlay:
         gradient_type: Linear
         color: rgba(0, 0, 0, 0.25)
+      vertical_alignment: Middle
   - _bookshop_name: cloudcannon/sections/hero-image
     content:
       path: /uploads/hero.png
@@ -77,6 +71,11 @@ sections:
   - _bookshop_name: cloudcannon/sections/two-columns
     content:
       left_column:
+        style:
+          content_alignment: Left
+          vertical_alignment: Top
+          custom_background_color: true
+          background_color: '#f5f5f5'
         content:
           blocks:
             - _bookshop_name: cloudcannon/simple/headline
@@ -96,12 +95,12 @@ sections:
                 alt:
               style:
                 shadow: true
+      right_column:
         style:
           content_alignment: Left
           vertical_alignment: Top
           custom_background_color: true
           background_color: '#f5f5f5'
-      right_column:
         content:
           blocks:
             - _bookshop_name: cloudcannon/simple/headline
@@ -121,11 +120,6 @@ sections:
                 alt:
               style:
                 shadow: true
-        style:
-          content_alignment: Left
-          vertical_alignment: Top
-          custom_background_color: true
-          background_color: '#f5f5f5'
     style:
       gap: 40
   - _bookshop_name: cloudcannon/sections/custom
@@ -219,6 +213,11 @@ sections:
   - _bookshop_name: cloudcannon/sections/two-columns
     content:
       left_column:
+        style:
+          content_alignment: Left
+          vertical_alignment: Middle
+          custom_background_color: false
+          background_color: '#f0f0f0'
         content:
           blocks:
             - _bookshop_name: cloudcannon/simple/headline
@@ -251,12 +250,12 @@ sections:
 
                   Aenean bibendum tincidunt felis a euismod. Proin dapibus
                   accumsan mi eu ultrices.
+      right_column:
         style:
           content_alignment: Left
-          vertical_alignment: Middle
+          vertical_alignment: Top
           custom_background_color: false
-          background_color: '#f0f0f0'
-      right_column:
+          background_color: '#ffffff'
         content:
           blocks:
             - _bookshop_name: cloudcannon/image
@@ -265,11 +264,6 @@ sections:
                 alt: Screenshot of the Share app overview page
               style:
                 shadow: false
-        style:
-          content_alignment: Left
-          vertical_alignment: Top
-          custom_background_color: false
-          background_color: '#ffffff'
     style:
       gap: 160
   - _bookshop_name: cloudcannon/structural/spacer
@@ -352,8 +346,8 @@ sections:
             content_width: Full
             content_alignment: Center
     style:
-      content_width: Medium
       content_alignment: Center
+      content_width: Medium
       borders: false
       custom_background_color: true
       background_color: '#f5f5f5'
@@ -384,7 +378,6 @@ sections:
     style:
       content_width: Small
       content_alignment: Center
-      vertical_alignment: Middle
       include_background_color: false
       background_color: '#F0F0F0'
       include_background_image: true
@@ -393,6 +386,7 @@ sections:
       background_overlay:
         gradient_type: Linear
         color: rgba(0, 0, 0, 0.25)
+      vertical_alignment: Middle
   - _bookshop_name: cloudcannon/structural/spacer
     style:
       height: 200
@@ -429,7 +423,7 @@ sections:
       blocks:
         - _bookshop_name: cloudcannon/simple/paragraph
           content:
-            text: '© 2022 Share App.'
+            text: © 2022 Share App.
     style:
       custom_background_color: false
       background_color: '#f5f5f5'
@@ -438,4 +432,11 @@ sections:
   - _bookshop_name: cloudcannon/structural/spacer
     style:
       height: 200
+seo:
+  page_description: descrptions testing
+  canonical_url: canonical testing
+  featured_image:
+  author_twitter_handle: 'twiitter handle etst '
+  open_graph_type: open graph test
+  no_index: false
 ---
