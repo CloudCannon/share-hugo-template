@@ -433,10 +433,10 @@ sections:
     style:
       height: 200
 seo:
-  page_description: descrptions testing
-  canonical_url: canonical testing
+  page_description:
+  canonical_url:
   featured_image:
-  author_twitter_handle: 'twiitter handle etst '
-  open_graph_type: open graph test
+  author_twitter_handle:
+  open_graph_type:
   no_index: false
 ---
