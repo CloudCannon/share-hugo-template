@@ -1,6 +1,13 @@
 ---
 _schema: default
 title: Home
+seo:
+  page_description:
+  canonical_url:
+  featured_image:
+  author_twitter_handle:
+  open_graph_type:
+  no_index: false
 sections:
   - _bookshop_name: cloudcannon/structural/spacer
     style:
@@ -432,11 +439,5 @@ sections:
   - _bookshop_name: cloudcannon/structural/spacer
     style:
       height: 200
-seo:
-  page_description:
-  canonical_url:
-  featured_image:
-  author_twitter_handle:
-  open_graph_type:
-  no_index: false
+
 ---
