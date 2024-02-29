@@ -1,6 +1,6 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "Hugo Starter"
+title = "Share"
 
 [module]
 replacements = "local/component-library -> ../component-library"
