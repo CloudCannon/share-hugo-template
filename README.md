@@ -5,6 +5,8 @@ Browse through a [live demo](https://hopeful-shoe.cloudvent.net/).
 
 ![Cause template screenshot](images/_screenshot.jpg)
 
+[![Deploy to CloudCannon](https://buttons.cloudcannon.com/deploy.svg)](https://app.cloudcannon.com/register#sites/connect/github/CloudCannon/share-hugo-template)
+
 Share was made by [CloudCannon](http://cloudcannon.com/), the Git CMS for everyone.
 This site works as-is, but is designed to be edited within the CloudCannon Visual Editor.
 
