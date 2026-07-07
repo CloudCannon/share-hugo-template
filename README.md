@@ -1,7 +1,7 @@
 # Share
 
 > [!IMPORTANT]
-> This template is no longer actively maintained but remains available for reference and learning. For production sites, we recommend our [modern templates]([/templates/](https://cloudcannon.com/templates/)).
+> This template is no longer actively maintained but remains available for reference and learning. For production sites, we recommend our [modern templates](https://cloudcannon.com/templates/).
 
 Single-page SaaS site built with CloudCannon's [Bookshop starter components](https://github.com/CloudCannon/starter-components).
 Browse through a [live demo](https://hopeful-shoe.cloudvent.net/).
